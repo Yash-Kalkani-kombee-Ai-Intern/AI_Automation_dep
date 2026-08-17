@@ -1,0 +1,124 @@
+API CHEAT SHEET
+
+1. API
+API = Application Programming Interface
+Used for communication between two applications.
+
+Flow:
+Frontend -> API -> Backend -> Database
+
+2. REST API / HTTP METHODS
+GET     -> Retrieve data
+POST    -> Create new data
+PUT     -> Complete data update
+PATCH   -> Partial data update
+DELETE  -> Delete data
+
+3. HTTP REQUEST
+Main parts:
+- Method
+- URL
+- Headers
+- Body
+
+Example:
+POST /users
+Content-Type: application/json
+
+{
+  "name": "Yash",
+  "age": 20
+}
+
+4. HEADERS
+Headers provide metadata about the request or response.
+
+Common Headers:
+Content-Type  -> Data format
+Authorization -> Authentication
+Accept        -> Expected response format
+User-Agent    -> Client information
+
+Example:
+Content-Type: application/json
+Authorization: Bearer <token>
+
+5. JSON
+JSON = Common data format used for API data exchange.
+
+Example:
+{
+  "id": 1,
+  "name": "Yash",
+  "email": "yash@gmail.com"
+}
+
+6. HTTP STATUS CODES
+200 -> OK / Success
+201 -> Created
+204 -> No Content
+400 -> Bad Request
+401 -> Unauthorized
+403 -> Forbidden
+404 -> Not Found
+409 -> Conflict
+500 -> Internal Server Error
+
+Shortcut:
+2xx -> Success
+4xx -> Client Error
+5xx -> Server Error
+
+7. URL STRUCTURE
+https://api.example.com/users/10
+
+https -> Protocol
+api.example.com -> Domain
+/users/10 -> Endpoint
+10 -> Resource ID
+
+8. PATH vs QUERY PARAMETER
+
+Path Parameter:
+ /users/10
+ -> Used for a specific resource
+
+Query Parameter:
+ /users?city=surat
+ -> Used for filtering, searching, or sorting
+
+9. POSTMAN
+Postman = API testing tool
+
+Use Postman to:
+- Enter URL
+- Select HTTP method
+- Add headers
+- Add JSON/body
+- Send request
+- Check response
+- Check status code
+
+10. API FLOW
+Client
+  ↓
+HTTP Request
+  ↓
+API
+  ↓
+Backend
+  ↓
+Database
+  ↓
+Response
+  ↓
+Client
+
+QUICK REVISION
+API = Communication
+REST = Architecture
+HTTP = Communication Protocol
+JSON = Data Format
+Headers = Metadata
+Postman = API Testing Tool
+Status Code = Request Result
