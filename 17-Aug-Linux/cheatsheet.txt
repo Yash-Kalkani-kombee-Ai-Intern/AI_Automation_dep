@@ -1,0 +1,122 @@
+# Linux Commands & Permissions Cheatsheet
+
+## 1. File & Directory Commands
+
+| Command | Use                | Example              |
+| ------- | ------------------ | -------------------- |
+| `pwd`   | Current directory  | `pwd`                |
+| `ls`    | List files/folders | `ls`                 |
+| `cd`    | Enter directory    | `cd folder`          |
+| `cd ..` | Go back            | `cd ..`              |
+| `mkdir` | Create directory   | `mkdir test`         |
+| `rm`    | Remove file        | `rm file.txt`        |
+| `cp`    | Copy file          | `cp a.txt b.txt`     |
+| `mv`    | Move/Rename        | `mv old.txt new.txt` |
+
+## 2. View File Contents
+
+| Command         | Use                    |
+| --------------- | ---------------------- |
+| `cat file.txt`  | Show complete file     |
+| `less file.txt` | Read file page-by-page |
+| `head file.txt` | Show first lines       |
+| `tail file.txt` | Show last lines        |
+
+## 3. Search
+
+```bash
+grep "word" file.txt
+```
+
+Searches for a specific word/text inside a file.
+
+## 4. Linux Users & Permissions
+
+```text
+User (u)    → File owner
+Group (g)   → Owner's group
+Others (o)  → All other users
+```
+
+### Permissions
+
+```text
+r = Read    = 4
+w = Write   = 2
+x = Execute = 1
+```
+
+Example:
+
+```text
+-rwxr-xr--
+```
+
+```text
+User    → rwx → 7
+Group   → r-x → 5
+Others  → r-- → 4
+```
+
+So:
+
+```bash
+chmod 754 file.txt
+```
+
+means:
+
+```text
+754 = rwx r-x r--
+```
+
+### Common Permission Formats
+
+```text
+777 → rwx rwx rwx
+755 → rwx r-x r-x
+644 → rw- r-- r--
+600 → rw- --- ---
+444 → r-- r-- r--
+```
+
+## 5. chmod
+
+Change file permissions:
+
+```bash
+chmod 755 file.txt
+chmod 644 file.txt
+```
+
+## 6. chown
+
+Change file owner/group:
+
+```bash
+sudo chown user:group file.txt
+```
+
+Example:
+
+```bash
+sudo chown yash:developers test.txt
+```
+
+## Quick Revision
+
+```text
+pwd       → Where am I?
+ls        → What is here?
+cd        → Go to folder
+mkdir     → Create folder
+rm        → Delete
+cp        → Copy
+mv        → Move/Rename
+cat       → Read file
+head      → First lines
+tail      → Last lines
+grep      → Search text
+chmod     → Change permissions
+chown     → Change owner
+```
