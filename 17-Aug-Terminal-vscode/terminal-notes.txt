@@ -1,0 +1,6 @@
+pwd     - Show current directory
+dir     - Show files and folders
+mkdir   - Create folder
+cd      - Enter folder
+cd ..   - Go back
+New-Item - Create file
