@@ -1,0 +1,674 @@
+CREATE DATABASE college_db;
+Query OK, 1 row affected (0.01 sec)
+----------------------------------------------------------------
+
+USE college_db;
+Database changed
+
+----------------------------------------------------------------
+
+SELECT DATABASE();
++------------+
+| DATABASE() |
++------------+
+| college_db |
++------------+
+1 row in set (0.00 sec)
+
+----------------------------------------------------------------
+
+> CREATE TABLE students (
+    ->     student_id INT PRIMARY KEY,
+    ->     name VARCHAR(50),
+    ->     age INT,
+    ->     city VARCHAR(50),
+    ->     course VARCHAR(50)
+    -> );
+Query OK, 0 rows affected (0.01 sec)
+
+----------------------------------------------------------------
+
+ INSERT INTO students VALUES
+    -> (1, 'Yash', 20, 'Surat', 'BSc IT'),
+    -> (2, 'Rahul', 21, 'Bardoli', 'BCA'),
+    -> (3, 'Amit', 22, 'Surat', 'BSc IT'),
+    -> (4, 'Neel', 19, 'Navsari', 'BCA'),
+    -> (5, 'Jay', 23, 'Surat', 'BSc IT');
+Query OK, 5 rows affected (0.01 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+----------------------------------------------------------------
+
+SELECT * FROM students;
++------------+-------+------+---------+--------+
+| student_id | name  | age  | city    | course |
++------------+-------+------+---------+--------+
+|          1 | Yash  |   20 | Surat   | BSc IT |
+|          2 | Rahul |   21 | Bardoli | BCA    |
+|          3 | Amit  |   22 | Surat   | BSc IT |
+|          4 | Neel  |   19 | Navsari | BCA    |
+|          5 | Jay   |   23 | Surat   | BSc IT |
++------------+-------+------+---------+--------+
+5 rows in set (0.00 sec)
+
+----------------------------------------------------------------
+
+select name,city from students
+    -> ;
++-------+---------+
+| name  | city    |
++-------+---------+
+| Yash  | Surat   |
+| Rahul | Bardoli |
+| Amit  | Surat   |
+| Neel  | Navsari |
+| Jay   | Surat   |
++-------+---------+
+5 rows in set (0.00 sec)
+
+----------------------------------------------------------------
+
+SELECT *
+    -> FROM students
+    -> WHERE age > 20;
++------------+-------+------+---------+--------+
+| student_id | name  | age  | city    | course |
++------------+-------+------+---------+--------+
+|          2 | Rahul |   21 | Bardoli | BCA    |
+|          3 | Amit  |   22 | Surat   | BSc IT |
+|          5 | Jay   |   23 | Surat   | BSc IT |
++------------+-------+------+---------+--------+
+3 rows in set (0.00 sec)
+
+----------------------------------------------------------------
+
+SELECT *
+    -> FROM students
+    -> WHERE city = 'Surat';
++------------+------+------+-------+--------+
+| student_id | name | age  | city  | course |
++------------+------+------+-------+--------+
+|          1 | Yash |   20 | Surat | BSc IT |
+|          3 | Amit |   22 | Surat | BSc IT |
+|          5 | Jay  |   23 | Surat | BSc IT |
++------------+------+------+-------+--------+
+3 rows in set (0.00 sec)
+
+----------------------------------------------------------------
+
+ SELECT *
+    -> FROM students
+    -> ORDER BY age ASC;
++------------+-------+------+---------+--------+
+| student_id | name  | age  | city    | course |
++------------+-------+------+---------+--------+
+|          4 | Neel  |   19 | Navsari | BCA    |
+|          1 | Yash  |   20 | Surat   | BSc IT |
+|          2 | Rahul |   21 | Bardoli | BCA    |
+|          3 | Amit  |   22 | Surat   | BSc IT |
+|          5 | Jay   |   23 | Surat   | BSc IT |
++------------+-------+------+---------+--------+
+5 rows in set (0.00 sec)
+
+----------------------------------------------------------------
+
+ SELECT *
+    -> FROM students
+    -> ORDER BY age DESC;
++------------+-------+------+---------+--------+
+| student_id | name  | age  | city    | course |
++------------+-------+------+---------+--------+
+|          5 | Jay   |   23 | Surat   | BSc IT |
+|          3 | Amit  |   22 | Surat   | BSc IT |
+|          2 | Rahul |   21 | Bardoli | BCA    |
+|          1 | Yash  |   20 | Surat   | BSc IT |
+|          4 | Neel  |   19 | Navsari | BCA    |
++------------+-------+------+---------+--------+
+5 rows in set (0.00 sec)
+
+
+----------------------------------------------------------------
+
+
+SELECT COUNT(*) AS total_students
+    -> FROM students;
++----------------+
+| total_students |
++----------------+
+|              5 |
++----------------+
+1 row in set (0.00 sec)
+
+----------------------------------------------------------------
+
+ SELECT AVG(age) AS average_age
+    -> FROM students;
++-------------+
+| average_age |
++-------------+
+|     21.0000 |
++-------------+
+1 row in set (0.00 sec)
+
+----------------------------------------------------------------
+
+SELECT course, COUNT(*) AS total_students
+    -> FROM students
+    -> GROUP BY course;
++--------+----------------+
+| course | total_students |
++--------+----------------+
+| BSc IT |              3 |
+| BCA    |              2 |
++--------+----------------+
+2 rows in set (0.00 sec)
+
+----------------------------------------------------------------
+
+SELECT course, AVG(age) AS average_age
+    -> FROM students
+    -> GROUP BY course;
++--------+-------------+
+| course | average_age |
++--------+-------------+
+| BSc IT |     21.6667 |
+| BCA    |     20.0000 |
++--------+-------------+
+2 rows in set (0.00 sec)
+
+----------------------------------------------------------------
+
+ SELECT course, COUNT(*) AS total_students
+    -> FROM students
+    -> GROUP BY course
+    -> HAVING COUNT(*) > 2;
++--------+----------------+
+| course | total_students |
++--------+----------------+
+| BSc IT |              3 |
++--------+----------------+
+1 row in set (0.00 sec)
+
+----------------------------------------------------------------
+----------------------------------------------------------------
+
+ INSERT INTO courses VALUES
+    -> (1, 'BSc IT', 50000),
+    -> (2, 'BCA', 45000);
+Query OK, 2 rows affected (0.00 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
+----------------------------------------------------------------
+
+mysql> select * from courses
+    -> ;
++-----------+-------------+-------+
+| course_id | course_name | fees  |
++-----------+-------------+-------+
+|         1 | BSc IT      | 50000 |
+|         2 | BCA         | 45000 |
++-----------+-------------+-------+
+2 rows in set (0.00 sec)
+
+----------------------------------------------------------------
+
+mysql> select sum(fees) AS TOTAL_FEES from courses;
++------------+
+| TOTAL_FEES |
++------------+
+|      95000 |
++------------+
+1 row in set (0.00 sec)
+
+============================================================================
+
+ SELECT students.name, students.course, courses.fees
+    -> FROM students
+    -> INNER JOIN courses
+    -> ON students.course = courses.course_name;
++-------+--------+-------+
+| name  | course | fees  |
++-------+--------+-------+
+| Yash  | BSc IT | 50000 |
+| Rahul | BCA    | 45000 |
+| Amit  | BSc IT | 50000 |
+| Neel  | BCA    | 45000 |
+| Jay   | BSc IT | 50000 |
++-------+--------+-------+
+5 rows in set (0.00 sec)
+
+----------------------------------------------------------------
+
+mysql> SELECT students.name, students.course, courses.fees
+    -> FROM students
+    -> INNER JOIN courses
+    -> ON students.course = courses.course_name
+    -> WHERE students.course = 'BSc IT';
++------+--------+-------+
+| name | course | fees  |
++------+--------+-------+
+| Yash | BSc IT | 50000 |
+| Amit | BSc IT | 50000 |
+| Jay  | BSc IT | 50000 |
++------+--------+-------+
+3 rows in set (0.00 sec)
+
+----------------------------------------------------------------
+
+mysql> SELECT students.name, students.course, courses.fees
+    -> FROM students
+    -> LEFT JOIN courses
+    -> ON students.course = courses.course_name;
++-------+--------+-------+
+| name  | course | fees  |
++-------+--------+-------+
+| Yash  | BSc IT | 50000 |
+| Rahul | BCA    | 45000 |
+| Amit  | BSc IT | 50000 |
+| Neel  | BCA    | 45000 |
+| Jay   | BSc IT | 50000 |
++-------+--------+-------+
+5 rows in set (0.00 sec)
+
+----------------------------------------------------------------
+
+mysql> SELECT students.name, students.course, courses.fees
+    -> FROM students
+    -> RIGHT JOIN courses
+    -> ON students.course = courses.course_name;
++-------+--------+-------+
+| name  | course | fees  |
++-------+--------+-------+
+| Jay   | BSc IT | 50000 |
+| Amit  | BSc IT | 50000 |
+| Yash  | BSc IT | 50000 |
+| Neel  | BCA    | 45000 |
+| Rahul | BCA    | 45000 |
++-------+--------+-------
+
+
+----------------------------------------------------------------
+
+
+ CREATE TABLE employees (
+    ->     employee_id INT PRIMARY KEY,
+    ->     name VARCHAR(50),
+    ->     manager_id INT
+    -> );
+Query OK, 0 rows affected (0.01 sec)
+
+----------------------------------------------------------------
+
+mysql> INSERT INTO employees VALUES
+    -> (1, 'Rahul', NULL),
+    -> (2, 'Yash', 1),
+    -> (3, 'Amit', 1),
+    -> (4, 'Neel', 2);
+Query OK, 4 rows affected (0.00 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+----------------------------------------------------------------
+
+mysql> SELECT
+    ->     e.name AS employee,
+    ->     m.name AS manager
+    -> FROM employees e
+    -> LEFT JOIN employees m
+    -> ON e.manager_id = m.employee_id;
++----------+---------+
+| employee | manager |
++----------+---------+
+| Rahul    | NULL    |
+| Yash     | Rahul   |
+| Amit     | Rahul   |
+| Neel     | Yash    |
++----------+---------+
+4 rows in set (0.00 sec)
+
+--------------------------------------------------------------
+
+ update students SET age = 20 where student_id = 4;
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from students;
++------------+-------+------+---------+--------+
+| student_id | name  | age  | city    | course |
++------------+-------+------+---------+--------+
+|          1 | Yash  |   20 | Surat   | BSc IT |
+|          2 | Rahul |   21 | Bardoli | BCA    |
+|          3 | Amit  |   22 | Surat   | BSc IT |
+|          4 | Neel  |   20 | Navsari | BCA    |
+|          5 | Jay   |   23 | Surat   | BSc IT |
++------------+-------+------+---------+--------+
+5 rows in set (0.00 sec)
+
+--------------------------------------------------------------
+
+ ALTER TABLE students ADD COLUMN email varchar(255);
+Query OK, 0 rows affected (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> select * from students;
++------------+-------+------+---------+--------+-------+
+| student_id | name  | age  | city    | course | email |
++------------+-------+------+---------+--------+-------+
+|          1 | Yash  |   20 | Surat   | BSc IT | NULL  |
+|          2 | Rahul |   21 | Bardoli | BCA    | NULL  |
+|          3 | Amit  |   22 | Surat   | BSc IT | NULL  |
+|          4 | Neel  |   20 | Navsari | BCA    | NULL  |
+|          5 | Jay   |   23 | Surat   | BSc IT | NULL  |
++------------+-------+------+---------+--------+-------+
+5 rows in set (0.00 sec)
+
+---------------------------------------------------------------
+
+ALTER TABLE students DROP COLUMN email;
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> select * from students;
++------------+-------+------+---------+--------+
+| student_id | name  | age  | city    | course |
++------------+-------+------+---------+--------+
+|          1 | Yash  |   20 | Surat   | BSc IT |
+|          2 | Rahul |   21 | Bardoli | BCA    |
+|          3 | Amit  |   22 | Surat   | BSc IT |
+|          4 | Neel  |   20 | Navsari | BCA    |
+|          5 | Jay   |   23 | Surat   | BSc IT |
++------------+-------+------+---------+--------+
+5 rows in set (0.00 sec)
+
+---------------------------------------------------------------
+
+mysql> select * from students;
++------------+-------+------+---------+--------+
+| student_id | name  | age  | city    | course |
++------------+-------+------+---------+--------+
+|          1 | Yash  |   20 | Surat   | BSc IT |
+|          2 | Rahul |   21 | Bardoli | BCA    |
+|          3 | Amit  |   22 | Surat   | BSc IT |
+|          4 | Neel  |   20 | Navsari | BCA    |
+|          5 | Jay   |   23 | Surat   | BSc IT |
++------------+-------+------+---------+--------+
+5 rows in set (0.00 sec)
+
+mysql> ALTER TABLE students MODIFY COLUMN city varchar(50) AFTER course;
+Query OK, 0 rows affected (0.05 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> select * from students;
++------------+-------+------+--------+---------+
+| student_id | name  | age  | course | city    |
++------------+-------+------+--------+---------+
+|          1 | Yash  |   20 | BSc IT | Surat   |
+|          2 | Rahul |   21 | BCA    | Bardoli |
+|          3 | Amit  |   22 | BSc IT | Surat   |
+|          4 | Neel  |   20 | BCA    | Navsari |
+|          5 | Jay   |   23 | BSc IT | Surat   |
++------------+-------+------+--------+---------+
+5 rows in set (0.00 sec)
+
+--------------------------------------------------------------------
+
+select * from students;
++------------+-------+------+--------+---------+
+| student_id | name  | age  | course | city    |
++------------+-------+------+--------+---------+
+|          1 | Yash  |   20 | BSc IT | Surat   |
+|          2 | Rahul |   21 | BCA    | Bardoli |
+|          3 | Amit  |   22 | BSc IT | Surat   |
+|          4 | Neel  |   20 | BCA    | Navsari |
+|          5 | Jay   |   23 | BSc IT | Surat   |
++------------+-------+------+--------+---------+
+5 rows in set (0.00 sec)
+
+mysql> ALTER TABLE students MODIFY COLUMN course varchar(50) FIRST;
+Query OK, 0 rows affected (0.05 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> select * from students;
++--------+------------+-------+------+---------+
+| course | student_id | name  | age  | city    |
++--------+------------+-------+------+---------+
+| BSc IT |          1 | Yash  |   20 | Surat   |
+| BCA    |          2 | Rahul |   21 | Bardoli |
+| BSc IT |          3 | Amit  |   22 | Surat   |
+| BCA    |          4 | Neel  |   20 | Navsari |
+| BSc IT |          5 | Jay   |   23 | Surat   |
++--------+------------+-------+------+---------+
+5 rows in set (0.00 sec)
+
+-------------------------------------------------------------------------
+
+select * from students;
++------------+-------+------+---------+--------+
+| student_id | name  | age  | city    | course |
++------------+-------+------+---------+--------+
+|          1 | Yash  |   20 | Surat   | BSc IT |
+|          2 | Rahul |   21 | Bardoli | BCA    |
+|          3 | Amit  |   22 | Surat   | BSc IT |
+|          4 | Neel  |   20 | Navsari | BCA    |
+|          5 | Jay   |   23 | Surat   | BSc IT |
++------------+-------+------+---------+--------+
+5 rows in set (0.00 sec)
+
+mysql> DELETE FROM students where student_id = 5;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from students;
++------------+-------+------+---------+--------+
+| student_id | name  | age  | city    | course |
++------------+-------+------+---------+--------+
+|          1 | Yash  |   20 | Surat   | BSc IT |
+|          2 | Rahul |   21 | Bardoli | BCA    |
+|          3 | Amit  |   22 | Surat   | BSc IT |
+|          4 | Neel  |   20 | Navsari | BCA    |
++------------+-------+------+---------+--------+
+4 rows in set (0.00 sec)
+
+-------------------------------------------------------------------------
+
+ select * from students;
++------------+-------+------+---------+--------+
+| student_id | name  | age  | city    | course |
++------------+-------+------+---------+--------+
+|          1 | Yash  |   20 | Surat   | BSc IT |
+|          2 | Rahul |   21 | Bardoli | BCA    |
+|          3 | Amit  |   22 | Surat   | BSc IT |
+|          4 | Neel  |   20 | Navsari | BCA    |
++------------+-------+------+---------+--------+
+4 rows in set (0.00 sec)
+
+mysql> ALTER TABLE students
+    -> ADD CONSTRAINT chk_age CHECK (age >= 18);
+Query OK, 4 rows affected (0.03 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+mysql> select * from students;
++------------+-------+------+---------+--------+
+| student_id | name  | age  | city    | course |
++------------+-------+------+---------+--------+
+|          1 | Yash  |   20 | Surat   | BSc IT |
+|          2 | Rahul |   21 | Bardoli | BCA    |
+|          3 | Amit  |   22 | Surat   | BSc IT |
+|          4 | Neel  |   20 | Navsari | BCA    |
++------------+-------+------+---------+--------+
+4 rows in set (0.00 sec)
+
+mysql> UPDATE students
+    -> SET age = 20
+    -> WHERE student_id = 4;
+Query OK, 0 rows affected (0.00 sec)
+Rows matched: 1  Changed: 0  Warnings: 0
+
+mysql> select * from students;
++------------+-------+------+---------+--------+
+| student_id | name  | age  | city    | course |
++------------+-------+------+---------+--------+
+|          1 | Yash  |   20 | Surat   | BSc IT |
+|          2 | Rahul |   21 | Bardoli | BCA    |
+|          3 | Amit  |   22 | Surat   | BSc IT |
+|          4 | Neel  |   20 | Navsari | BCA    |
++------------+-------+------+---------+--------+
+4 rows in set (0.00 sec)
+
+mysql> UPDATE students
+    -> SET age = 15
+    -> WHERE student_id = 4;
+ERROR 3819 (HY000): Check constraint 'chk_age' is violated.
+
+---------------------------------------------------------------------
+
+ select * from students;
++------------+-------+------+---------+--------+
+| student_id | name  | age  | city    | course |
++------------+-------+------+---------+--------+
+|          1 | Yash  |   20 | Surat   | BSc IT |
+|          2 | Rahul |   21 | Bardoli | BCA    |
+|          3 | Amit  |   22 | Surat   | BSc IT |
+|          4 | Neel  |   20 | Navsari | BCA    |
++------------+-------+------+---------+--------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT AVG(age) AS AVRAGE_AGE from students;
++------------+
+| AVRAGE_AGE |
++------------+
+|    20.7500 |
++------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT sum(student_id) AS AVRAGE_AGE from students;
++------------+
+| AVRAGE_AGE |
++------------+
+|         10 |
++------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT MIN(age) from students;
++----------+
+| MIN(age) |
++----------+
+|       20 |
++----------+
+1 row in set (0.00 sec)
+
+mysql> SELECT MAX(age) from students;
++----------+
+| MAX(age) |
++----------+
+|       22 |
++----------+
+1 row in set (0.00 sec)
+
+mysql> SELECT UPPER(course) from students;
++---------------+
+| UPPER(course) |
++---------------+
+| BSC IT        |
+| BCA           |
+| BSC IT        |
+| BCA           |
++---------------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT LOWER(course) from students;
++---------------+
+| LOWER(course) |
++---------------+
+| bsc it        |
+| bca           |
+| bsc it        |
+| bca           |
++---------------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT CONCAT(course) from students;
++----------------+
+| CONCAT(course) |
++----------------+
+| BSc IT         |
+| BCA            |
+| BSc IT         |
+| BCA            |
++----------------+
+4 rows in set (0.00 sec)
+
+select course , AVG(age) from students GROUP BY course;
++--------+----------+
+| course | AVG(age) |
++--------+----------+
+| BSc IT |  21.0000 |
+| BCA    |  20.5000 |
++--------+----------+
+2 rows in set (0.00 sec)
+
+mysql> SELECT CONCAT(name, ' - ', city) AS student_info
+    -> from students;
++-----------------+
+| student_info    |
++-----------------+
+| Yash - Surat    |
+| Rahul - Bardoli |
+| Amit - Surat    |
+| Neel - Navsari  |
++-----------------+
+4 rows in set (0.00 sec)
+
+
+SELECT SUBSTRING(name, 1, 3)
+    -> FROM students;
++-----------------------+
+| SUBSTRING(name, 1, 3) |
++-----------------------+
+| Yas                   |
+| Rah                   |
+| Ami                   |
+| Nee                   |
++-----------------------+
+4 rows in set (0.00 sec)
+
+===================================================================
+
+COUNT()      → Count rows
+SUM()        → Total
+AVG()        → Average
+MIN()        → Minimum
+MAX()        → Maximum
+
+UPPER()      → Uppercase
+LOWER()      → Lowercase
+CONCAT()     → Join text
+LENGTH()     → String length
+TRIM()       → Remove spaces
+SUBSTRING()  → Get part of string
+
+ROUND()      → Round number
+CEIL()       → Round up
+FLOOR()      → Round down
+ABS()        → Positive value
+
+CURDATE()    → Current date
+NOW()        → Date + time
+YEAR()       → Year
+MONTH()      → Month
+DAY()        → Day
+
+IF()         → Simple condition
+CASE         → Multiple conditions
+
+=========================================================================
+
+COMMIT       → Changes permanently save
+ROLLBACK     → Undo uncommitted changes
+AUTOCOMMIT   → Automatically save changes
+
+START TRANSACTION → Start transaction
+COMMIT            → Save transaction
+ROLLBACK          → Cancel transaction
+
+AUTOCOMMIT = ON  → Changes automatically save
+AUTOCOMMIT = OFF → Manually COMMIT required
+============================================================================
