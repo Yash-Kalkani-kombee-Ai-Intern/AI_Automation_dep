@@ -1,0 +1,315 @@
+{
+  "info": {
+    "_postman_id": "11c0ebb6-d118-4326-be24-d1ffbf70e855",
+    "name": "APITest",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "57473603"
+  },
+  "item": [
+    {
+      "name": "GetBooks",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BaseURL}}/books",
+          "host": [
+            "{{BaseURL}}"
+          ],
+          "path": [
+            "books"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "SingleQ",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://places.google.com/?q=postman",
+          "protocol": "https",
+          "host": [
+            "places",
+            "google",
+            "com"
+          ],
+          "path": [
+            ""
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "postman"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "MulQ",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://places.google.com/?q=postman&hl=en",
+          "protocol": "https",
+          "host": [
+            "places",
+            "google",
+            "com"
+          ],
+          "path": [
+            ""
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "postman"
+            },
+            {
+              "key": "hl",
+              "value": "en"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "FilterBooks",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BaseURL}}/books?genre=computers&checkedOut=True",
+          "host": [
+            "{{BaseURL}}"
+          ],
+          "path": [
+            "books"
+          ],
+          "query": [
+            {
+              "key": "genre",
+              "value": "computers"
+            },
+            {
+              "key": "checkedOut",
+              "value": "True"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Path",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.github.com/users/rakesh",
+          "protocol": "https",
+          "host": [
+            "api",
+            "github",
+            "com"
+          ],
+          "path": [
+            "users",
+            "rakesh"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Multi Path",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.github.com/repos/postmanlabs/newman",
+          "protocol": "https",
+          "host": [
+            "api",
+            "github",
+            "com"
+          ],
+          "path": [
+            "repos",
+            "postmanlabs",
+            "newman"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetBooks by id",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://library-api.postmanlabs.com/books",
+          "protocol": "https",
+          "host": [
+            "library-api",
+            "postmanlabs",
+            "com"
+          ],
+          "path": [
+            "books"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Post Own Book",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "const id = pm.response.json().id;\r",
+              "pm.collectionVariables.set(\"bookid\",id)"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "apikey",
+          "apikey": [
+            {
+              "key": "value",
+              "value": "postmanrulz",
+              "type": "string"
+            },
+            {
+              "key": "key",
+              "value": "api-key",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "  {\r\n        \"id\": \"0b645903-ca66-4b54-9db6-daf295cde4268742\",\r\n        \"title\": \"Add own Book\",\r\n        \"author\": \"Yash Kalkani -5\",\r\n        \"genre\": \"Self Respect\",\r\n        \"yearPublished\": 2000,\r\n        \"checkedOut\": true,\r\n        \"isPermanentCollection\": false,\r\n        \"createdAt\": \"2026-08-18T06:10:17.263Z\"\r\n    }\r\n     ",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://library-api.postmanlabs.com/books",
+          "protocol": "https",
+          "host": [
+            "library-api",
+            "postmanlabs",
+            "com"
+          ],
+          "path": [
+            "books"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "postmanrulz",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"checkedOut\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BaseURL}}/books/{{bookid}}",
+          "host": [
+            "{{BaseURL}}"
+          ],
+          "path": [
+            "books",
+            "{{bookid}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deletebook",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "postmanrulz",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"checkedOut\": true\r\n}"
+        },
+        "url": {
+          "raw": "{{BaseURL}}/books/{{bookid}}",
+          "host": [
+            "{{BaseURL}}"
+          ],
+          "path": [
+            "books",
+            "{{bookid}}"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "BaseURL",
+      "value": ""
+    },
+    {
+      "key": "bookid",
+      "value": ""
+    }
+  ]
+}
