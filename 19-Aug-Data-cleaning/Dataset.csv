@@ -1,0 +1,26 @@
+Employee_ID,Name,Age,Gender,Department,Job_Role,Experience_Years,Salary,Joining_Year,Performance_Score,City,Education,Remote,Overtime_Hours,Leave_Days
+1001,Aarav Shah,23,Male,IT,Developer,1,28000,2024,7.5,Surat,BSc IT,Yes,5,8
+1002,Diya Patel,25,Female,HR,HR Executive,2,32000,2023,8.1,Ahmedabad,MBA,No,2,6
+1003,Rohan Mehta,,Male,Finance,Accountant,5,55000,2020,6.8,Vadodara,BCom,Yes,8,12
+1004,Kavya Desai,31,Female,IT,Data Analyst,7,,2018,9.0,Surat,BSc IT,Yes,10,5
+1005,Arjun Joshi,27,Male,Sales,,4,45000,2021,7.2,Mumbai,BBA,No,4,
+1006,Mira Shah,24,Female,HR,Recruiter,2,35000,2023,,Surat,MBA,Yes,3,7
+1007,Dev Patel,35,Male,,Senior Developer,10,95000,2015,9.4,Ahmedabad,MCA,Yes,12,4
+1008,Isha Mehta,28,Female,Finance,Financial Analyst,,70000,2019,7.8,Pune,MCom,No,6,9
+1009,Yash Desai,26,Male,Sales,Sales Executive,3,42000,2022,6.9,,BBA,No,7,11
+1010,Neha Joshi,30,Female,IT,Tester,7,65000,2018,8.8,Mumbai,BSc IT,,9,6
+1011,Raj Shah,33,Male,Finance,Accountant,9,,2017,7.1,Vadodara,BCom,No,5,13
+1012,Anaya Patel,22,Female,HR,HR Executive,1,30000,2025,8.0,Surat,MBA,Yes,1,5
+1013,Kunal Mehta,41,Male,,Project Manager,15,120000,2010,9.2,Bangalore,MCA,Yes,15,3
+1014,Riya Desai,29,Female,Sales,Sales Manager,6,78000,2019,,Ahmedabad,MBA,No,8,8
+1015,Vivan Joshi,37,Male,Finance,Financial Analyst,11,90000,2014,7.9,Pune,MCom,Yes,10,7
+1016,Pooja Shah,26,Female,IT,Developer,4,50000,2021,7.4,Surat,BSc IT,Yes,6,10
+1017,Manav Patel,32,Male,HR,Recruiter,8,68000,2017,8.7,Mumbai,,No,4,6
+1018,Kiara Mehta,28,Female,Sales,Sales Executive,5,48000,2020,6.5,Vadodara,BBA,No,7,12
+1019,Dhruv Desai,24,Male,IT,Tester,2,38000,2024,7.0,Surat,BSc IT,Yes,,9
+1020,Nisha Joshi,39,Female,Finance,Accountant,13,105000,2012,9.1,Ahmedabad,BCom,No,11,4
+1005,Arjun Joshi,27,Male,Sales,,4,45000,2021,7.2,Mumbai,BBA,No,4,
+1022,Diya Patel,25,Female,HR,HR Executive,2,32000,2023,8.1,Ahmedabad,MBA,No,2,6
+1023,Rohan Mehta,29,Male,Finance,Accountant,5,55000,2020,6.8,Vadodara,BCom,Yes,8,12
+1024,Kavya Desai,31,Female,IT,Data Analyst,7,62000,2018,9.0,Surat,BSc IT,Yes,10,5
+1025,Arjun Joshi,27,Male,Sales,Sales Executive,4,45000,2021,7.2,Mumbai,BBA,No,4,10
