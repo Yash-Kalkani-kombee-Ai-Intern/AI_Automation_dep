@@ -1,0 +1,51 @@
+employee_id,employee_name,dept_id,age,salary,joining_date,city,status
+1001,Aarav Shah,D01,24,45000,2023-01-15,Surat,Active
+1002,Diya Patel,D02,27,52000,15/02/2022,Ahmedabad,Active
+1003,Rohan Mehta,D03,29,60000,2021-07-10,Mumbai,Active
+1004,Mira Joshi,D01,26,48000,2022-11-01,Surat,Active
+1005,Kabir Desai,D04,31,72000,2020-03-18,Pune,Active
+1006,Isha Trivedi,D02,25,51000,2023/04/21,Vadodara,Active
+1007,Vivaan Shah,D05,28,65000,2021-09-05,Bengaluru,Inactive
+1008,Anaya Mehta,D03,30,68000,2020-12-11,Mumbai,Active
+1009,Arjun Patel,D01,23,42000,2024-01-08,Surat,Active
+1010,Kiara Desai,D04,32,75000,2019-06-25,Pune,Active
+1011,Dev Shah,D02,26,50000,2022-08-19,Ahmedabad,Active
+1012,Sara Khan,D06,29,58000,2021-10-30,Delhi,Active
+1013,Yashvi Patel,D03,27,62000,2023-02-14,Mumbai,Active
+1014,Manav Joshi,D01,35,85000,2018-05-17,Surat,Active
+1015,Riya Mehta,D05,24,"47,000",2024-03-01,Bengaluru,Active
+1016,Neil Desai,D04,33,80000,2020-09-12,Pune,Active
+1017,Aditi Shah,D02,28,54000,2022-01-20,Ahmedabad,Active
+1018,Om Patel,D03,26,61000,2023-06-07,Mumbai,Active
+1019,Nisha Joshi,D07,30,59000,2021-04-16,Jaipur,Active
+1020,Reyansh Mehta,D01,22,39000,2024-05-10,Surat,Active
+1021,Tara Desai,D05,27,67000,2022-07-22,Bengaluru,Inactive
+1022,Vivaan Shah,D05,28,65000,2021-09-05,Bengaluru,Inactive
+1023,Aarav Shah,D01,24,45000,2023-01-15,Surat,Active
+1024,Pooja Patel,,29,56000,2022-10-09,Ahmedabad,Active
+1025,Kunal Mehta,D08,34,,2019-11-11,Mumbai,Active
+1026,Rahul Shah,D02,,49000,2023-08-14,Ahmedabad,Active
+1027,Neha Patel,D03,31,63000,,Mumbai,Active
+1028,Jay Joshi,D01,25,44000,2024-02-18,,Active
+1029,Priya Desai,D04,30,71000,2020-06-21,Pune,Active
+1030,Harsh Mehta,D05,27,66000,2022-03-11,Bengaluru,Active
+1031,   Meera Shah   ,D02,26,53000,2023-05-19,Ahmedabad,Active
+1032,Ravi Patel,d03,29,59000,2021-12-01,Mumbai,Active
+1033,Simran Joshi,D01,28,55000,2022-09-15,Surat,Active
+1034,Akash Desai,D04,36,90000,2018-07-20,Pune,Active
+1035,Divya Mehta,D05,24,48000,2024-01-25,Bengaluru,Active
+1036,Karan Shah,D06,32,61000,2020-10-10,Delhi,Inactive
+1037,Anjali Patel,D03,27,62000,2023-03-05,Mumbai,Active
+1038,Mohit Joshi,D01,33,78000,2019-04-17,Surat,Active
+1039,Sneha Desai,D04,29,69000,2021-08-09,Pune,Active
+1040,Varun Mehta,D05,31,73000,2020-01-13,Bengaluru,Active
+1041,Rahul Shah,D02,,49000,2023-08-14,Ahmedabad,Active
+1042,Heena Patel,D03,26,58000,2022-06-16,Mumbai,Active
+1043,Parth Joshi,D01,24,41000,2024-04-12,Surat,Active
+1044,Nidhi Desai,D04,28,64000,2022-11-30,Pune,Active
+1045,Krish Mehta,D05,30,70000,2021-05-18,Bengaluru,Active
+1046,Maulik Shah,D06,35,76000,2019-09-23,Delhi,Active
+1047,Hetal Patel,D03,27,"62,000",2023-03-05,Mumbai,Active
+1048,   Parth Joshi,D01,24,41000,2024-04-12,Surat,Active
+1049,Unknown,D99,40,100000,2020-01-01,Unknown,Active
+1050,Devika Shah,D02,29,57000,2022-02-28,Ahmedabad,Active

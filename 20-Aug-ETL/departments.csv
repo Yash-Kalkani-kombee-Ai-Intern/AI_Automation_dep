@@ -1,0 +1,51 @@
+dept_id,department_name,location,manager,annual_budget
+D01,Engineering,Surat,Rajesh Shah,12000000
+D02,Human Resources,Ahmedabad,Neha Patel,6500000
+D03,Finance,Mumbai,Amit Mehta,8000000
+D04,Sales,Pune,Priya Desai,10000000
+D05,Marketing,Bengaluru,Karan Joshi,9000000
+D06,Operations,Delhi,Sanjay Kumar,7500000
+D07,Customer Support,Jaipur,Meena Sharma,6000000
+D08,Research and Development,Mumbai,Vikram Rao,11000000
+D09,Legal,Ahmedabad,Nitin Shah,5000000
+D10,IT Support,Surat,Komal Patel,5500000
+D11,Procurement,Vadodara,Rakesh Joshi,4500000
+D12,Quality Assurance,Pune,Sneha Desai,7000000
+D13,Business Development,Delhi,Arvind Patel,8500000
+D14,Data Analytics,Mumbai,Pinal Shah,9500000
+D15,Administration,Surat,Jignesh Patel,4000000
+D16,Security,Bengaluru,Mohan Rao,3500000
+D17,Training,Ahmedabad,Hetal Shah,3000000
+D18,Product,Pune,Rina Mehta,10500000
+D19,Design,Mumbai,Nirali Joshi,6200000
+D20,Compliance,Delhi,Bhavesh Patel,4800000
+D21,Logistics,Vadodara,Dhruv Shah,7200000
+D22,Strategy,Surat,Mansi Mehta,9000000
+D23,Operations,Bengaluru,Mohan Rao,3500000
+D24,Corporate Affairs,Ahmedabad,,5200000
+D25,Engineering,Surat,Rajesh Shah,12000000
+D26,Finance,Mumbai,Amit Mehta,8000000
+D27,Marketing,Bengaluru,Karan Joshi,9000000
+D28,Sales,Pune,Priya Desai,10000000
+D29,Human Resources,Ahmedabad,Neha Patel,6500000
+D30,Customer Support,Jaipur,Meena Sharma,6000000
+D31,Engineering,Surat,Rajesh Shah,12000000
+D32,Finance,Mumbai,Amit Mehta,8000000
+D33,IT Support,Surat,Komal Patel,5500000
+D34,Data Analytics,Mumbai,Pinal Shah,9500000
+D35,Procurement,Vadodara,Rakesh Joshi,4500000
+D36,Quality Assurance,Pune,Sneha Desai,7000000
+D37,Design,Mumbai,Nirali Joshi,6200000
+D38,Product,Pune,Rina Mehta,10500000
+D39,Operations,Delhi,Sanjay Kumar,7500000
+D40,Legal,Ahmedabad,Nitin Shah,5000000
+D41,Training,Ahmedabad,Hetal Shah,3000000
+D42,Administration,Surat,Jignesh Patel,4000000
+D43,Logistics,Vadodara,Dhruv Shah,7200000
+D44,Strategy,Surat,Mansi Mehta,9000000
+D45,Security,Bengaluru,Mohan Rao,3500000
+D46,Research and Development,Mumbai,Vikram Rao,11000000
+D47,Corporate Affairs,Ahmedabad,,5200000
+D48,Sales,Pune,Priya Desai,"10,000,000"
+D49,Finance,Mumbai,Amit Mehta,8000000
+D50,Engineering,Surat,Rajesh Shah,12000000
