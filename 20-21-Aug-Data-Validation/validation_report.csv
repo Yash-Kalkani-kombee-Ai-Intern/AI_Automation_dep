@@ -1,0 +1,10 @@
+employee_id,column,check,failure_case,index
+1026,email,not_nullable,,25
+1023,email,str_matches('^[\w\.-]+@[\w\.-]+\.\w+$'),nirav.patel@gmail,22
+1028,age,not_nullable,,27
+1028,age,dtype('int64'),,27
+1021,age,"in_range(18, 65)",67.0,20
+1049,age,"in_range(18, 65)",17.0,48
+1015,salary,greater_than(0),-45000,14
+1050,joining_date,str_matches('^\d{4}-\d{2}-\d{2}$'),invalid-date,49
+1050,status,"isin(['Active', 'Inactive'])",Working,49

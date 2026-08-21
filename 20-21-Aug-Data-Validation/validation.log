@@ -1,0 +1,2 @@
+2026-08-21 10:59:44,638 - ERROR - Data validation failed
+2026-08-21 10:59:44,640 - ERROR - Column: age | Check: dtype('int64') | Value: float64 | Index: nan
