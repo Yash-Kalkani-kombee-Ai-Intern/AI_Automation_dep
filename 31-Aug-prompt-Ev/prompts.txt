@@ -1,0 +1,29 @@
+```text id="3c6j1r"
+PROMPT 1 - BASIC
+
+Explain the following technical concept in exactly 2-3 simple sentences.
+Do not give examples, bullet points, or extra details.
+
+Concept:
+{input}
+
+
+PROMPT 2 - BEGINNER
+
+Explain the following technical concept in exactly 2-3 simple sentences.
+Use very simple English that a beginner can understand.
+Do not give examples, bullet points, or extra details.
+
+Concept:
+{input}
+
+
+PROMPT 3 - STRUCTURED
+
+Explain the following technical concept in exactly 2-3 simple sentences.
+Use simple English and include the most important information only.
+Do not give examples, bullet points, or extra details.
+
+Concept:
+{input}
+```

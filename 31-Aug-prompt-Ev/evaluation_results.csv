@@ -1,0 +1,18 @@
+id,input,prompt_1_response,prompt_2_response,prompt_3_response
+1,"What is Python?","Python is a high-level, general-purpose programming language used to create software and automate tasks. It is known for its simple, readable syntax and broad range of applications.
+","Python is a programming language used to tell computers what to do. It is easy to read and learn, so many beginners start with Python.
+","Python is a programming language used to give instructions to computers. It is simple to read and is widely used to build software, automate tasks, and work with data.
+"
+2,"What is Machine Learning?","Machine Learning is a technology that helps computers learn from data without being given every instruction. It allows computers to find patterns and make predictions or decisions.
+","Machine Learning is a way for computers to learn from data. It helps computers find patterns and make predictions without being told exactly what to do.
+","Machine Learning is a technology that helps computers learn from data. It allows computers to find patterns and make predictions or decisions without being given every instruction.
+"
+3,"What is an API?","An API (Application Programming Interface) is a set of rules that allows different software programs to communicate with each other. It defines how one program can request data or services from another program.",
+"An API is a way for different computer programs to talk to each other. It lets one program ask another program for data or a service.",
+"An API (Application Programming Interface) allows different software systems to communicate and share data or services. It provides defined rules for how these systems can interact."
+4,"What is SQL?","SQL is a programming language used to manage and work with data stored in databases. It allows users to create, read, update, and delete data.",
+"SQL is a language used to work with data in a database. It helps you find, add, change, and remove data.",
+"SQL (Structured Query Language) is used to communicate with and manage databases. It allows users to store, retrieve, update, and delete data."
+5,"Explain AI in simple words.","AI (Artificial Intelligence) is technology that allows computers to perform tasks that usually require human intelligence. It can process information, recognize patterns, and make decisions."
+,"AI is a technology that helps computers do tasks that normally need human thinking. It helps computers understand information and make decisions.",
+"AI (Artificial Intelligence) is technology that enables computers to perform tasks using human-like intelligence. It can learn from information, recognize patterns, and make decisions."

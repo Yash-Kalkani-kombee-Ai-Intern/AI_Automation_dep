@@ -1,0 +1,6 @@
+id,input,ideal_output
+1,"What is Python?","Python is a programming language used to build applications, automate tasks, analyze data, and create AI systems."
+2,"What is Machine Learning?","Machine Learning is a technology that allows computers to learn patterns from data and make predictions or decisions."
+3,"What is an API?","An API allows different software applications to communicate and exchange data with each other."
+4,"What is SQL?","SQL is a language used to store, retrieve, update, and manage data in databases."
+5,"Explain AI in simple words.","AI is technology that enables computers to perform tasks that normally require human intelligence, such as understanding language and recognizing images."
