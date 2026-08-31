@@ -1,0 +1,454 @@
+# PROMPT LIBRARY
+
+## 1. Learning / Explanation Prompts
+
+### Prompt 1 – Simple Explanation
+
+> You are a teacher. Explain [TOPIC] in very simple English for a beginner. Give a definition, one real-life example, and key points.
+
+**Use:** Learning new topics.
+
+### Prompt 2 – Quick Revision
+
+> Explain [TOPIC] in 5 short points for quick revision. Use simple language and one real-life example.
+
+**Use:** Exam preparation and revision.
+
+### Prompt 3 – Deep Explanation
+
+> Explain [TOPIC] step by step. Start with the basic concept, then explain how it works, why it is used, and give a practical example.
+
+**Use:** Understanding difficult concepts.
+
+---
+
+# 2. Summarization Prompts
+
+### Prompt 1 – Short Summary
+
+> Summarize the following text in 5 bullet points. Keep only the most important information and do not add new information.
+
+**Use:** Articles, notes, reports.
+
+### Prompt 2 – Beginner Summary
+
+> Summarize this content for a beginner using simple English. Avoid unnecessary technical terms.
+
+**Use:** Study material.
+
+### Prompt 3 – Key Points
+
+> Read the following text and extract only the key points. Return them as a numbered list.
+
+**Use:** Quick note-making.
+
+---
+
+# 3. Coding Prompts
+
+### Prompt 1 – Generate Code
+
+> You are an experienced Python developer. Write Python code to [TASK]. Explain the code briefly and include an example.
+
+**Use:** Code generation.
+
+### Prompt 2 – Beginner Code
+
+> Write simple and beginner-friendly Python code for [TASK]. Add comments to explain important lines.
+
+**Use:** Learning programming.
+
+### Prompt 3 – Optimize Code
+
+> Review the following Python code and suggest a cleaner and more efficient version. Explain what was improved.
+
+**Use:** Code optimization.
+
+---
+
+# 4. Debugging Prompts
+
+### Prompt 1 – Find Error
+
+> You are a Python debugging expert. Find the error in the following code, explain why it occurs, and provide the corrected code.
+
+**Use:** Fixing programming errors.
+
+### Prompt 2 – Error Explanation
+
+> Explain this error message in simple English. Identify the cause and give the exact steps to fix it.
+
+**Use:** Understanding errors.
+
+### Prompt 3 – Minimal Fix
+
+> Fix the error in this code without changing unrelated parts. First identify the problem, then provide the corrected code.
+
+**Use:** Safe code correction.
+
+---
+
+# 5. SQL Prompts
+
+### Prompt 1 – SQL Query
+
+> You are an SQL expert. Write a SQL query to [TASK]. Explain the query in simple English.
+
+**Use:** SQL query generation.
+
+### Prompt 2 – SQL Practice
+
+> Give me 5 beginner SQL questions based on SELECT, WHERE, GROUP BY, ORDER BY, and JOIN. Do not provide answers until I attempt them.
+
+**Use:** SQL practice.
+
+### Prompt 3 – SQL Debugging
+
+> Review this SQL query, find any syntax or logic errors, and provide the corrected query with a short explanation.
+
+**Use:** SQL debugging.
+
+---
+
+# 6. Data Extraction Prompts
+
+### Prompt 1 – Extract Information
+
+> Extract the following information from the text: Name, Age, Email, City. Return the result in JSON format. If information is missing, return null. Do not guess.
+
+**Use:** Extracting structured data.
+
+### Prompt 2 – Table Extraction
+
+> Extract the important information from the following text and return it as a table with columns: Name, Department, Salary.
+
+**Use:** Reports and datasets.
+
+### Prompt 3 – Accurate Extraction
+
+> Extract only information explicitly available in the provided text. Do not infer or invent missing information.
+
+**Use:** Accuracy-sensitive data extraction.
+
+---
+
+# 7. Classification Prompts
+
+### Prompt 1 – Sentiment Classification
+
+> Classify the following customer review as Positive, Negative, or Neutral. Return only one label.
+
+**Use:** Sentiment analysis.
+
+### Prompt 2 – Category Classification
+
+> Classify the following text into one of these categories: Technical, Billing, Account, General. Return only the category.
+
+**Use:** Customer support.
+
+### Prompt 3 – Spam Detection
+
+> Classify this message as Spam or Not Spam. Return only one label.
+
+**Use:** Email/message classification.
+
+---
+
+# 8. Few-Shot Prompts
+
+### Prompt 1 – Sentiment Few-Shot
+
+> "I love this product." → Positive
+> "This product is terrible." → Negative
+> "The product is okay." → Neutral
+>
+> "I am very happy with this product." →
+
+**Use:** Pattern-based classification.
+
+### Prompt 2 – Text Category Few-Shot
+
+> "My payment failed." → Billing
+> "I cannot log in." → Account
+> "The app keeps crashing." → Technical
+>
+> "I forgot my password." →
+
+**Use:** Customer support classification.
+
+### Prompt 3 – Formatting Few-Shot
+
+> Input: John, 22, Surat
+> Output: Name=John | Age=22 | City=Surat
+>
+> Input: Rahul, 25, Ahmedabad
+> Output:
+
+**Use:** Getting a specific output pattern.
+
+---
+
+# 9. Role Prompting
+
+### Prompt 1 – Teacher
+
+> You are an experienced teacher. Explain [TOPIC] to a beginner using simple English and practical examples.
+
+**Use:** Education.
+
+### Prompt 2 – Data Analyst
+
+> You are a professional data analyst. Analyze the following dataset and identify important trends, patterns, and possible problems.
+
+**Use:** Data analysis.
+
+### Prompt 3 – Software Developer
+
+> You are a senior software developer. Review the following code and suggest improvements for readability, performance, and maintainability.
+
+**Use:** Software development.
+
+---
+
+# 10. Chain-of-Thought / Step-Based Prompts
+
+### Prompt 1 – Math
+
+> Solve this problem step by step and show the key calculations before giving the final answer.
+
+**Use:** Mathematical problems.
+
+### Prompt 2 – Logic
+
+> Break this problem into smaller steps, solve each step, and then provide the final answer.
+
+**Use:** Complex reasoning.
+
+### Prompt 3 – Problem Solving
+
+> Analyze the problem, identify the important factors, compare possible solutions, and provide the best solution with concise reasoning.
+
+**Use:** Decision-making and planning.
+
+---
+
+# 11. Constraint Prompts
+
+### Prompt 1 – Length Constraint
+
+> Explain [TOPIC] in exactly 5 bullet points. Keep each point under 20 words.
+
+**Use:** Short answers.
+
+### Prompt 2 – Language Constraint
+
+> Explain [TOPIC] using simple English. Avoid advanced technical terminology.
+
+**Use:** Beginner learning.
+
+### Prompt 3 – Content Constraint
+
+> Answer only the question asked. Do not include unrelated information or additional topics.
+
+**Use:** Focused responses.
+
+---
+
+# 12. Output Formatting Prompts
+
+### Prompt 1 – Table
+
+> Compare [TOPIC A] and [TOPIC B] in a table with columns: Definition, Advantages, Disadvantages, Use Case.
+
+**Use:** Comparisons.
+
+### Prompt 2 – JSON
+
+> Return the extracted information as valid JSON with the fields: name, age, city, email.
+
+**Use:** APIs and automation.
+
+### Prompt 3 – Bullet Points
+
+> Explain [TOPIC] using 7 clear bullet points followed by one real-life example.
+
+**Use:** Notes and documentation.
+
+---
+
+# 13. Hallucination-Control Prompts
+
+### Prompt 1 – Don't Guess
+
+> Answer only using the information provided. If the answer is not available, say "Unknown". Do not guess.
+
+**Use:** Reliable document-based answers.
+
+### Prompt 2 – Source Restriction
+
+> Use only the provided context to answer the question. Do not add facts from outside knowledge.
+
+**Use:** Document Q&A.
+
+### Prompt 3 – Fact Checking
+
+> Separate the answer into "Known from the provided information" and "Not available". Do not make assumptions.
+
+**Use:** Reducing unsupported claims.
+
+---
+
+# 14. Translation Prompts
+
+### Prompt 1 – Simple Translation
+
+> Translate the following text from English to Gujarati. Preserve the original meaning and do not add extra information.
+
+**Use:** Language translation.
+
+### Prompt 2 – Professional Translation
+
+> Translate the following text into professional English while preserving the original meaning.
+
+**Use:** Emails and documents.
+
+### Prompt 3 – Natural Translation
+
+> Translate this text into natural Gujarati that is easy for a normal reader to understand.
+
+**Use:** User-friendly translation.
+
+---
+
+# 15. Interview Prompts
+
+### Prompt 1 – Mock Interview
+
+> Act as a technical interviewer. Ask me 10 beginner-level Python interview questions one at a time. After each answer, evaluate it briefly.
+
+**Use:** Interview preparation.
+
+### Prompt 2 – Interview Feedback
+
+> Review my answer to this interview question. Tell me what was correct, what was missing, and how I can improve it.
+
+**Use:** Interview practice.
+
+### Prompt 3 – HR Interview
+
+> Act as an HR interviewer and ask me common fresher interview questions one by one. Give feedback after each answer.
+
+**Use:** HR preparation.
+
+---
+
+# 16. Prompt Chaining
+
+### Prompt 1 – Document Workflow
+
+> Step 1: Extract the important information from this document.
+
+Then:
+
+> Step 2: Convert the extracted information into a concise summary.
+
+Then:
+
+> Step 3: Convert the summary into a presentation outline.
+
+**Use:** Multi-step document processing.
+
+### Prompt 2 – Data Workflow
+
+> Step 1: Identify missing values and duplicates in the dataset.
+
+Then:
+
+> Step 2: Suggest appropriate cleaning methods.
+
+Then:
+
+> Step 3: Generate Python code to perform the cleaning.
+
+**Use:** Data cleaning workflow.
+
+---
+
+# 17. Real-Life Reusable Prompts
+
+### General Assistant
+
+> Understand my request carefully. Ask for missing information only when necessary. Give a clear and practical answer.
+
+### Research
+
+> Research this topic and summarize the most important findings using reliable sources. Clearly separate facts from assumptions.
+
+### Email Writing
+
+> Write a professional email about [TOPIC]. Keep it clear, polite, and concise.
+
+### Report Writing
+
+> Create a structured report about [TOPIC] with introduction, main findings, conclusion, and recommendations.
+
+### Presentation
+
+> Create a 10-slide presentation outline about [TOPIC]. Keep each slide concise and include important points only.
+
+### Data Analysis
+
+> Analyze this dataset and identify missing values, duplicates, outliers, important trends, and useful insights.
+
+### Code Review
+
+> Review this code for bugs, readability, performance, and best practices. Explain each important issue and suggest improvements.
+
+---
+
+# 18. Prompt Testing Template
+
+For every important prompt, use this format:
+
+**Task:**
+What problem should the prompt solve?
+
+**Basic Prompt:**
+[Write the original prompt]
+
+**Improved Prompt:**
+[Write the improved prompt]
+
+**Expected Output:**
+[What output should be produced?]
+
+**Actual Output:**
+[What did the AI produce?]
+
+**Result:**
+Successful / Needs Improvement
+
+**Improvement Made:**
+[What was changed in the prompt?]
+
+---
+
+# 19. Final Prompt Library Checklist
+
+✓ Learning
+✓ Summarization
+✓ Coding
+✓ Debugging
+✓ SQL
+✓ Data Extraction
+✓ Classification
+✓ Few-Shot
+✓ Role Prompting
+✓ Step-Based Prompting
+✓ Constraints
+✓ Output Formatting
+✓ Hallucination Control
+✓ Translation
+✓ Interview
+✓ Prompt Chaining
+✓ Prompt Testing
