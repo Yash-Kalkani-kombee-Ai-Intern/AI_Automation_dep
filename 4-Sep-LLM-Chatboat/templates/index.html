@@ -1,8 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>AI Chatbot</title>
 
     <link rel="stylesheet" href="/static/style.css">
@@ -10,31 +13,45 @@
 
 <body>
 
-    <div class="chat-container">
+    <div class="container">
 
-        <!-- Header -->
-        <div class="chat-header">
-            <h1>🤖 AI Chatbot</h1>
-            <p>Powered by Gemini</p>
-        </div>
+        <h1>🤖 AI Chatbot</h1>
+        <p class="subtitle">Powered by Gemini</p>
 
         <!-- Session ID -->
         <div class="session-section">
+
             <label for="sessionId">Session ID</label>
 
-            <input
-                type="text"
-                id="sessionId"
-                value="user123"
-                placeholder="Enter session ID"
-            >
+            <div class="session-row">
+
+                <input
+                    type="text"
+                    id="sessionId"
+                    value="user123"
+                    placeholder="Enter Session ID"
+                >
+
+                <button onclick="changeSession()">
+                    Change Session
+                </button>
+
+            </div>
+
+            <p id="sessionStatus">
+                Current session: user123
+            </p>
+
         </div>
 
-        <!-- Chat Messages -->
+        <!-- Chat Box -->
         <div id="chatBox" class="chat-box">
-            <div class="welcome-message">
-                👋 Hello! How can I help you today?
+
+            <div class="message assistant">
+                <strong>AI:</strong>
+                Hello! How can I help you?
             </div>
+
         </div>
 
         <!-- Message Input -->
@@ -44,7 +61,7 @@
                 type="text"
                 id="messageInput"
                 placeholder="Type your message..."
-                autocomplete="off"
+                onkeydown="handleEnter(event)"
             >
 
             <button onclick="sendMessage()">
@@ -54,7 +71,7 @@
         </div>
 
         <!-- Clear Chat -->
-        <button class="clear-button" onclick="clearChat()">
+        <button class="clear-btn" onclick="clearChat()">
             Clear Chat
         </button>
 
@@ -63,32 +80,61 @@
 
     <script>
 
-        // Send message to FastAPI
-        async function sendMessage() {
+        // -----------------------------------------
+        // Current Session
+        // -----------------------------------------
 
-            const sessionId =
+        let currentSession = "user123";
+
+
+        // -----------------------------------------
+        // Change Session
+        // -----------------------------------------
+
+        function changeSession() {
+
+            const newSession =
                 document.getElementById("sessionId").value.trim();
 
-            const messageInput =
+            if (newSession === "") {
+
+                alert("Please enter a Session ID.");
+
+                return;
+            }
+
+            currentSession = newSession;
+
+            document.getElementById("sessionStatus").innerText =
+                "Current session: " + currentSession;
+
+            // Clear old UI messages
+            document.getElementById("chatBox").innerHTML = "";
+
+            // Load history of selected session
+            loadHistory();
+
+        }
+
+
+        // -----------------------------------------
+        // Send Message
+        // -----------------------------------------
+
+        async function sendMessage() {
+
+            const input =
                 document.getElementById("messageInput");
 
-            const message =
-                messageInput.value.trim();
+            const message = input.value.trim();
 
-            if (!sessionId) {
-                alert("Please enter a Session ID.");
+            if (message === "") {
                 return;
             }
 
-            if (!message) {
-                return;
-            }
+            addMessage("You", message);
 
-            // Show user message
-            addMessage("user", message);
-
-            // Clear input
-            messageInput.value = "";
+            input.value = "";
 
             try {
 
@@ -101,37 +147,49 @@
                     },
 
                     body: JSON.stringify({
-                        session_id: sessionId,
+
+                        session_id: currentSession,
+
                         message: message
+
                     })
 
                 });
 
+
                 const data = await response.json();
 
-                if (!response.ok) {
-                    throw new Error(data.detail || "Something went wrong");
+                if (response.ok) {
+
+                    addMessage("AI", data.response);
+
+                } else {
+
+                    addMessage(
+                        "AI",
+                        "Error: " + (data.detail || "Something went wrong")
+                    );
+
                 }
 
-                // Show AI response
-                addMessage("assistant", data.response);
-
-            }
-
-            catch (error) {
+            } catch (error) {
 
                 addMessage(
-                    "assistant",
-                    "❌ Error: " + error.message
+                    "AI",
+                    "Server connection error."
                 );
 
+                console.error(error);
             }
 
         }
 
 
-        // Add message to chat box
-        function addMessage(role, message) {
+        // -----------------------------------------
+        // Add Message to UI
+        // -----------------------------------------
+
+        function addMessage(sender, message) {
 
             const chatBox =
                 document.getElementById("chatBox");
@@ -139,75 +197,132 @@
             const messageDiv =
                 document.createElement("div");
 
-            messageDiv.classList.add(
-                "message",
-                role
-            );
+            messageDiv.className =
+                sender === "AI"
+                ? "message assistant"
+                : "message user";
 
-            messageDiv.textContent = message;
+            const strongTag = document.createElement("strong");
+            strongTag.textContent = sender + ": ";
+            messageDiv.appendChild(strongTag);
+
+            const textNode = document.createTextNode(message);
+            messageDiv.appendChild(textNode);
 
             chatBox.appendChild(messageDiv);
 
-            // Scroll to latest message
-            chatBox.scrollTop = chatBox.scrollHeight;
-
+            chatBox.scrollTop =
+                chatBox.scrollHeight;
         }
 
 
-        // Clear chat
-        async function clearChat() {
+        // -----------------------------------------
+        // Load Session History
+        // -----------------------------------------
 
-            const sessionId =
-                document.getElementById("sessionId").value.trim();
-
-            if (!sessionId) {
-                alert("Please enter a Session ID.");
-                return;
-            }
+        async function loadHistory() {
 
             try {
 
                 const response = await fetch(
-                    `/chat/${sessionId}`,
+                    `/chat/${currentSession}/history`
+                );
+
+                const data = await response.json();
+
+                const chatBox =
+                    document.getElementById("chatBox");
+
+                chatBox.innerHTML = "";
+
+                if (data.history.length === 0) {
+
+                    addMessage(
+                        "AI",
+                        "New conversation started!"
+                    );
+
+                    return;
+                }
+
+
+                data.history.forEach(item => {
+
+                    if (item.role === "user") {
+
+                        addMessage(
+                            "You",
+                            item.message
+                        );
+
+                    } else {
+
+                        addMessage(
+                            "AI",
+                            item.message
+                        );
+
+                    }
+
+                });
+
+            } catch (error) {
+
+                console.error(error);
+
+            }
+
+        }
+
+
+        // -----------------------------------------
+        // Clear Current Session
+        // -----------------------------------------
+
+        async function clearChat() {
+
+            try {
+
+                await fetch(
+                    `/chat/${currentSession}`,
                     {
                         method: "DELETE"
                     }
                 );
 
-                const data = await response.json();
+                document.getElementById("chatBox").innerHTML = "";
 
-                // Clear UI
-                document.getElementById("chatBox").innerHTML = `
-                    <div class="welcome-message">
-                        🗑️ Chat history cleared.
-                    </div>
-                `;
+                addMessage(
+                    "AI",
+                    "Chat cleared. New conversation started!"
+                );
 
-                console.log(data);
+            } catch (error) {
 
-            }
-
-            catch (error) {
-
-                alert("Unable to clear chat.");
+                console.error(error);
 
             }
 
         }
 
 
-        // Press Enter to send message
-        document
-            .getElementById("messageInput")
-            .addEventListener("keydown", function(event) {
+        // -----------------------------------------
+        // Enter Key
+        // -----------------------------------------
 
-                if (event.key === "Enter") {
-                    sendMessage();
-                }
+        function handleEnter(event) {
 
-            });
+            if (event.key === "Enter") {
+
+                sendMessage();
+
+            }
+
+        }
 
     </script>
 
 </body>
+
 </html>
+

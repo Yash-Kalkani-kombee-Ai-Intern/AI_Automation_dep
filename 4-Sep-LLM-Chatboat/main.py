@@ -1,24 +1,31 @@
-from fastapi import FastAPI
-from fastapi.staticfiles import StaticFiles
+import os
+from pathlib import Path
+from typing import Any, Dict, List
+
+from dotenv import load_dotenv
+from fastapi import FastAPI, HTTPException
 from fastapi.responses import HTMLResponse
-from pydantic import BaseModel
+from fastapi.staticfiles import StaticFiles
 from google import genai
 from google.genai import types
-from dotenv import load_dotenv
-import os
+from pydantic import BaseModel
 
 load_dotenv()
 
-app = FastAPI(title="LLM Chatbot API")
+BASE_DIR = Path(__file__).resolve().parent
 
+app = FastAPI(title="LLM Chatbot API")
 
 # --------------------------------------------------
 # Gemini Client
 # --------------------------------------------------
 
-client = genai.Client(
-    api_key=os.getenv("GEMINI_API_KEY")
-)
+api_key = os.getenv("GEMINI_API_KEY")
+if not api_key:
+    # Fallback to prevent crash if not set, or let genai find it from env
+    api_key = ""
+
+client = genai.Client(api_key=api_key) if api_key else genai.Client()
 
 
 # --------------------------------------------------
@@ -44,9 +51,8 @@ Rules:
 # Conversation Memory
 # --------------------------------------------------
 
-chat_sessions = {}
-
-chat_history = {}
+chat_sessions: Dict[str, Any] = {}
+chat_history: Dict[str, List[Dict[str, str]]] = {}
 
 
 # --------------------------------------------------
@@ -62,18 +68,21 @@ class ChatRequest(BaseModel):
 # Serve Frontend
 # --------------------------------------------------
 
-app.mount(
-    "/static",
-    StaticFiles(directory="static"),
-    name="static"
-)
+static_dir = BASE_DIR / "static"
+if static_dir.exists():
+    app.mount(
+        "/static",
+        StaticFiles(directory=str(static_dir)),
+        name="static",
+    )
 
 
 @app.get("/", response_class=HTMLResponse)
-def home():
-
-    with open("templates/index.html", "r", encoding="utf-8") as file:
-        return file.read()
+def home() -> HTMLResponse:
+    index_file = BASE_DIR / "templates" / "index.html"
+    if not index_file.exists():
+        raise HTTPException(status_code=404, detail="Template not found")
+    return HTMLResponse(content=index_file.read_text(encoding="utf-8"))
 
 
 # --------------------------------------------------
@@ -81,48 +90,42 @@ def home():
 # --------------------------------------------------
 
 @app.post("/chat")
-def chat(request: ChatRequest):
-
-    # Create new session
+def chat(request: ChatRequest) -> Dict[str, Any]:
+    # Create new session if not existing
     if request.session_id not in chat_sessions:
-
         chat_sessions[request.session_id] = client.chats.create(
-            model="gemini-3.6-flash",
+            model="gemini-2.5-flash",
             config=types.GenerateContentConfig(
                 system_instruction=SYSTEM_PROMPT
-            )
+            ),
         )
-
         chat_history[request.session_id] = []
 
-
-    # Get existing chat
-    chat = chat_sessions[request.session_id]
-
+    # Get existing chat session
+    session_chat = chat_sessions[request.session_id]
 
     # Send message to Gemini
-    response = chat.send_message(
+    response = session_chat.send_message(
         message=request.message
     )
 
+    response_text = response.text or ""
 
     # Save user message
     chat_history[request.session_id].append({
         "role": "user",
-        "message": request.message
+        "message": request.message,
     })
-
 
     # Save AI response
     chat_history[request.session_id].append({
         "role": "assistant",
-        "message": response.text
+        "message": response_text,
     })
-
 
     return {
         "session_id": request.session_id,
-        "response": response.text
+        "response": response_text,
     }
 
 
@@ -131,19 +134,16 @@ def chat(request: ChatRequest):
 # --------------------------------------------------
 
 @app.get("/chat/{session_id}/history")
-def get_chat_history(session_id: str):
-
+def get_chat_history(session_id: str) -> Dict[str, Any]:
     if session_id not in chat_history:
-
         return {
             "session_id": session_id,
-            "history": []
+            "history": [],
         }
-
 
     return {
         "session_id": session_id,
-        "history": chat_history[session_id]
+        "history": chat_history[session_id],
     }
 
 
@@ -152,17 +152,14 @@ def get_chat_history(session_id: str):
 # --------------------------------------------------
 
 @app.delete("/chat/{session_id}")
-def delete_chat(session_id: str):
-
+def delete_chat(session_id: str) -> Dict[str, Any]:
     if session_id in chat_sessions:
         del chat_sessions[session_id]
-
 
     if session_id in chat_history:
         del chat_history[session_id]
 
-
     return {
         "message": "Chat history deleted",
-        "session_id": session_id
+        "session_id": session_id,
     }
