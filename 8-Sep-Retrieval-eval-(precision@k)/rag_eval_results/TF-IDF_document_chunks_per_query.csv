@@ -1,0 +1,9 @@
+query_id,question,relevant_doc_ids,MRR@5,Precision@1,Recall@1,Precision@3,Recall@3,Precision@5,Recall@5,top_result
+q1,Why is retrieval quality important in RAG?,['doc_retrieval'],1.0,1.0,1.0,0.3333333333333333,1.0,0.2,1.0,doc_retrieval
+q2,What are the disadvantages of very small and very large chunks?,['doc_chunking'],1.0,1.0,1.0,0.3333333333333333,1.0,0.2,1.0,doc_chunking
+q3,How do embedding models affect retrieval?,['doc_embeddings'],1.0,1.0,1.0,0.3333333333333333,1.0,0.2,1.0,doc_embeddings
+q4,How does a vector database retrieve the top-k results?,['doc_vector_db'],1.0,1.0,1.0,0.3333333333333333,1.0,0.2,1.0,doc_vector_db
+q5,What is the difference between Precision@k and Recall@k?,['doc_evaluation'],0.5,0.0,0.0,0.3333333333333333,1.0,0.2,1.0,doc_chunking
+q6,How can retrieval be evaluated before generation?,"['doc_retrieval', 'doc_evaluation']",1.0,1.0,0.5,0.3333333333333333,0.5,0.4,1.0,doc_retrieval
+q7,Which chunking approach can preserve meaning better than fixed-size chunks?,['doc_chunking'],1.0,1.0,1.0,0.3333333333333333,1.0,0.2,1.0,doc_chunking
+q8,Why should the production search configuration be used during evaluation?,['doc_vector_db'],1.0,1.0,1.0,0.3333333333333333,1.0,0.2,1.0,doc_vector_db
