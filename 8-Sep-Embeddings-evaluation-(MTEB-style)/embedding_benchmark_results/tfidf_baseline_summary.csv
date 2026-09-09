@@ -1,0 +1,5 @@
+,score
+Recall@1,0.5
+Recall@3,0.625
+Recall@5,0.875
+MRR@5,0.625
