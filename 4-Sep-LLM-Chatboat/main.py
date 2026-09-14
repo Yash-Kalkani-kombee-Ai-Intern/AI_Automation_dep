@@ -89,25 +89,72 @@ def home() -> HTMLResponse:
 # Chat API
 # --------------------------------------------------
 
+AVAILABLE_MODELS = [
+    os.getenv("GEMINI_MODEL", "gemini-3.5-flash"),
+    "gemini-3.1-flash-lite",
+    "gemini-flash-latest",
+    "gemini-3.7-flash"
+]
+
 @app.post("/chat")
 def chat(request: ChatRequest) -> Dict[str, Any]:
     # Create new session if not existing
     if request.session_id not in chat_sessions:
-        chat_sessions[request.session_id] = client.chats.create(
-            model="gemini-2.5-flash",
-            config=types.GenerateContentConfig(
-                system_instruction=SYSTEM_PROMPT
-            ),
-        )
+        for m_name in AVAILABLE_MODELS:
+            try:
+                chat_sessions[request.session_id] = client.chats.create(
+                    model=m_name,
+                    config=types.GenerateContentConfig(
+                        system_instruction=SYSTEM_PROMPT
+                    ),
+                )
+                break
+            except Exception:
+                continue
+        if request.session_id not in chat_sessions:
+            chat_sessions[request.session_id] = client.chats.create(
+                model=AVAILABLE_MODELS[0],
+                config=types.GenerateContentConfig(
+                    system_instruction=SYSTEM_PROMPT
+                ),
+            )
         chat_history[request.session_id] = []
 
-    # Get existing chat session
     session_chat = chat_sessions[request.session_id]
 
-    # Send message to Gemini
-    response = session_chat.send_message(
-        message=request.message
-    )
+    # Send message to Gemini with retry on transient rate limits & multi-model fallback
+    response = None
+    for attempt in range(len(AVAILABLE_MODELS) * 2):
+        try:
+            response = session_chat.send_message(
+                message=request.message
+            )
+            break
+        except Exception as e:
+            err_str = str(e)
+            if "429" in err_str or "RESOURCE_EXHAUSTED" in err_str or "503" in err_str:
+                import re, time
+                # Try recreating chat session with next fallback model
+                next_model = AVAILABLE_MODELS[(attempt + 1) % len(AVAILABLE_MODELS)]
+                try:
+                    session_chat = client.chats.create(
+                        model=next_model,
+                        config=types.GenerateContentConfig(
+                            system_instruction=SYSTEM_PROMPT
+                        ),
+                    )
+                    chat_sessions[request.session_id] = session_chat
+                    continue
+                except Exception:
+                    pass
+                m = re.search(r'retry in (\d+(?:\.\d+)?)s', err_str)
+                wait_sec = float(m.group(1)) + 2.0 if m else 10.0
+                time.sleep(wait_sec)
+            else:
+                raise e
+
+    if not response:
+        raise HTTPException(status_code=500, detail="Failed to get response from Gemini API after retries.")
 
     response_text = response.text or ""
 
