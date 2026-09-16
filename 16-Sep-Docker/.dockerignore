@@ -1,0 +1,16 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+
+.git
+.gitignore
+
+.ipynb_checkpoints
+*.ipynb
+
+.env
+
+.pytest_cache
+.coverage
