@@ -1,0 +1,1034 @@
+2026-09-21 10:41:14,631 | INFO | monitoring | Home endpoint called
+2026-09-21 10:41:31,081 | INFO | monitoring | Health check requested
+2026-09-21 10:41:44,786 | ERROR | monitoring | Division by zero error occurred
+2026-09-21 10:41:46,033 | ERROR | monitoring | Division by zero error occurred
+2026-09-21 10:41:48,123 | ERROR | monitoring | Division by zero error occurred
+2026-09-21 10:42:19,856 | INFO | monitoring | Home endpoint called
+2026-09-21 10:42:34,715 | INFO | monitoring | Health check requested
+2026-09-21 10:42:49,227 | ERROR | monitoring | Division by zero error occurred
+2026-09-21 11:27:05,412 | INFO | monitoring | Request started | method=GET | path=/
+2026-09-21 11:27:05,414 | INFO | monitoring | Home endpoint called
+2026-09-21 11:27:05,416 | INFO | monitoring | Request completed | method=GET | path=/ | status=200 | latency=3.55ms
+2026-09-21 11:27:05,547 | INFO | monitoring | Request started | method=GET | path=/favicon.ico
+2026-09-21 11:27:05,548 | INFO | monitoring | Request completed | method=GET | path=/favicon.ico | status=404 | latency=1.27ms
+2026-09-21 11:27:09,780 | INFO | monitoring | Request started | method=GET | path=/docs
+2026-09-21 11:27:09,780 | INFO | monitoring | Request completed | method=GET | path=/docs | status=200 | latency=0.78ms
+2026-09-21 11:27:09,852 | INFO | monitoring | Request started | method=GET | path=/openapi.json
+2026-09-21 11:27:09,854 | INFO | monitoring | Request completed | method=GET | path=/openapi.json | status=200 | latency=1.77ms
+2026-09-21 11:27:19,761 | INFO | monitoring | Request started | method=GET | path=/health
+2026-09-21 11:27:19,763 | INFO | monitoring | Health check requested
+2026-09-21 11:27:19,763 | INFO | monitoring | Request completed | method=GET | path=/health | status=200 | latency=2.00ms
+2026-09-21 11:27:27,749 | INFO | monitoring | Request started | method=GET | path=/error
+2026-09-21 11:27:27,750 | ERROR | monitoring | Division by zero error occurred
+2026-09-21 11:27:27,751 | INFO | monitoring | Request completed | method=GET | path=/error | status=200 | latency=1.18ms
+2026-09-21 12:11:47,348 | INFO | monitoring | Request started | method=GET | path=/
+2026-09-21 12:11:47,350 | INFO | monitoring | Home endpoint called
+2026-09-21 12:11:47,351 | INFO | monitoring | Request completed | method=GET | path=/ | status=200 | latency=3.00ms
+2026-09-21 12:11:52,083 | INFO | monitoring | Request started | method=GET | path=/docs
+2026-09-21 12:11:52,083 | INFO | monitoring | Request completed | method=GET | path=/docs | status=200 | latency=0.70ms
+2026-09-21 12:11:53,342 | INFO | monitoring | Request started | method=GET | path=/docs
+2026-09-21 12:11:53,342 | INFO | monitoring | Request completed | method=GET | path=/docs | status=200 | latency=0.62ms
+2026-09-21 12:13:10,360 | INFO | monitoring | Request started | method=GET | path=/
+2026-09-21 12:13:10,362 | INFO | monitoring | Home endpoint called
+2026-09-21 12:13:10,363 | INFO | monitoring | Request completed | method=GET | path=/ | status=200 | latency=2.88ms
+2026-09-21 12:13:10,485 | INFO | monitoring | Request started | method=GET | path=/favicon.ico
+2026-09-21 12:13:10,486 | INFO | monitoring | Request completed | method=GET | path=/favicon.ico | status=404 | latency=0.92ms
+2026-09-21 12:13:13,766 | INFO | monitoring | Request started | method=GET | path=/docs
+2026-09-21 12:13:13,767 | INFO | monitoring | Request completed | method=GET | path=/docs | status=200 | latency=0.73ms
+2026-09-21 12:13:13,837 | INFO | monitoring | Request started | method=GET | path=/openapi.json
+2026-09-21 12:13:13,839 | INFO | monitoring | Request completed | method=GET | path=/openapi.json | status=200 | latency=1.62ms
+2026-09-21 12:13:21,651 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-21 12:13:21,654 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.70ms
+2026-09-21 12:55:48,592 | INFO | monitoring | Request started | method=GET | path=/
+2026-09-21 12:55:48,595 | INFO | monitoring | Home endpoint called
+2026-09-21 12:55:48,596 | INFO | monitoring | Request completed | method=GET | path=/ | status=200 | latency=3.68ms
+2026-09-21 12:55:48,786 | INFO | monitoring | Request started | method=GET | path=/favicon.ico
+2026-09-21 12:55:48,787 | INFO | monitoring | Request completed | method=GET | path=/favicon.ico | status=404 | latency=0.97ms
+2026-09-21 12:55:52,841 | INFO | monitoring | Request started | method=GET | path=/docs
+2026-09-21 12:55:52,842 | INFO | monitoring | Request completed | method=GET | path=/docs | status=200 | latency=0.58ms
+2026-09-21 12:55:52,913 | INFO | monitoring | Request started | method=GET | path=/openapi.json
+2026-09-21 12:55:52,915 | INFO | monitoring | Request completed | method=GET | path=/openapi.json | status=200 | latency=1.47ms
+2026-09-21 12:55:59,596 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-21 12:55:59,599 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.72ms
+2026-09-22 09:23:36,880 | INFO | monitoring | Request started | method=GET | path=/
+2026-09-22 09:23:36,897 | INFO | monitoring | Home endpoint called
+2026-09-22 09:23:36,899 | INFO | monitoring | Request completed | method=GET | path=/ | status=200 | latency=18.63ms
+2026-09-22 09:23:37,011 | INFO | monitoring | Request started | method=GET | path=/favicon.ico
+2026-09-22 09:23:37,013 | INFO | monitoring | Request completed | method=GET | path=/favicon.ico | status=404 | latency=1.32ms
+2026-09-22 09:23:40,811 | INFO | monitoring | Request started | method=GET | path=/docs
+2026-09-22 09:23:40,812 | INFO | monitoring | Request completed | method=GET | path=/docs | status=200 | latency=1.01ms
+2026-09-22 09:23:41,540 | INFO | monitoring | Request started | method=GET | path=/openapi.json
+2026-09-22 09:23:41,542 | INFO | monitoring | Request completed | method=GET | path=/openapi.json | status=200 | latency=1.70ms
+2026-09-22 09:23:47,951 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:23:47,953 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.56ms
+2026-09-22 09:23:49,382 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:23:49,384 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.55ms
+2026-09-22 09:24:02,676 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:24:02,679 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.53ms
+2026-09-22 09:24:08,423 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:24:08,426 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.47ms
+2026-09-22 09:24:09,117 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:24:09,119 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.43ms
+2026-09-22 09:24:09,800 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:24:09,803 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.43ms
+2026-09-22 09:27:23,075 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:27:23,078 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.34ms
+2026-09-22 09:27:28,073 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:27:28,075 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.49ms
+2026-09-22 09:27:33,071 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:27:33,074 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.28ms
+2026-09-22 09:27:38,071 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:27:38,074 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.45ms
+2026-09-22 09:27:43,071 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:27:43,074 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.41ms
+2026-09-22 09:27:48,071 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:27:48,072 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.88ms
+2026-09-22 09:27:53,071 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:27:53,074 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.63ms
+2026-09-22 09:27:58,070 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:27:58,073 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.52ms
+2026-09-22 09:28:03,071 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:28:03,073 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.99ms
+2026-09-22 09:28:08,070 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:28:08,072 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.81ms
+2026-09-22 09:28:13,070 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:28:13,072 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.91ms
+2026-09-22 09:28:18,069 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:28:18,071 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.98ms
+2026-09-22 09:28:23,069 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:28:23,071 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.93ms
+2026-09-22 09:28:28,070 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:28:28,072 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.27ms
+2026-09-22 09:28:33,069 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:28:33,071 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.80ms
+2026-09-22 09:28:38,069 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:28:38,071 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.85ms
+2026-09-22 09:28:43,069 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:28:43,071 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.10ms
+2026-09-22 09:28:48,069 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:28:48,071 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.90ms
+2026-09-22 09:28:51,919 | INFO | monitoring | Request started | method=GET | path=/docs
+2026-09-22 09:28:51,919 | INFO | monitoring | Request completed | method=GET | path=/docs | status=200 | latency=0.60ms
+2026-09-22 09:28:52,037 | INFO | monitoring | Request started | method=GET | path=/openapi.json
+2026-09-22 09:28:52,037 | INFO | monitoring | Request completed | method=GET | path=/openapi.json | status=200 | latency=0.58ms
+2026-09-22 09:28:53,068 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:28:53,070 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.87ms
+2026-09-22 09:28:58,069 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:28:58,070 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.82ms
+2026-09-22 09:29:03,068 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:29:03,070 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.91ms
+2026-09-22 09:29:08,068 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:29:08,070 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.99ms
+2026-09-22 09:29:13,067 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:29:13,069 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.83ms
+2026-09-22 09:29:18,068 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:29:18,070 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.97ms
+2026-09-22 09:29:23,068 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:29:23,069 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.79ms
+2026-09-22 09:29:28,067 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:29:28,069 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.87ms
+2026-09-22 09:29:33,067 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:29:33,070 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.32ms
+2026-09-22 09:29:38,067 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:29:38,069 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.81ms
+2026-09-22 09:29:43,068 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:29:43,070 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.47ms
+2026-09-22 09:29:48,067 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:29:48,069 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.78ms
+2026-09-22 09:29:53,066 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:29:53,069 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.65ms
+2026-09-22 09:29:58,067 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:29:58,069 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.89ms
+2026-09-22 09:30:03,066 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:30:03,068 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.75ms
+2026-09-22 09:30:04,397 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:30:04,400 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.98ms
+2026-09-22 09:30:08,066 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:30:08,068 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.92ms
+2026-09-22 09:30:13,065 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:30:13,067 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.81ms
+2026-09-22 09:30:18,066 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:30:18,067 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.65ms
+2026-09-22 09:30:23,065 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:30:23,067 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.13ms
+2026-09-22 09:30:28,065 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:30:28,066 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.72ms
+2026-09-22 09:30:33,065 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:30:33,066 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.87ms
+2026-09-22 09:30:38,064 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:30:38,066 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.85ms
+2026-09-22 09:30:43,065 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:30:43,067 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.35ms
+2026-09-22 09:30:48,064 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:30:48,066 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.95ms
+2026-09-22 09:30:53,064 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:30:53,066 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.86ms
+2026-09-22 09:30:58,064 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:30:58,066 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.66ms
+2026-09-22 09:31:03,064 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:31:03,066 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.87ms
+2026-09-22 09:31:08,063 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:31:08,065 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.69ms
+2026-09-22 09:31:13,064 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:31:13,066 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.94ms
+2026-09-22 09:31:18,063 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:31:18,065 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.81ms
+2026-09-22 09:31:23,063 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:31:23,065 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.86ms
+2026-09-22 09:31:28,062 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:31:28,064 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.86ms
+2026-09-22 09:31:33,063 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:31:33,065 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.80ms
+2026-09-22 09:31:38,062 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:31:38,064 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.83ms
+2026-09-22 09:31:43,062 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:31:43,064 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.02ms
+2026-09-22 09:31:48,062 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:31:48,064 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.76ms
+2026-09-22 09:31:53,062 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:31:53,064 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.04ms
+2026-09-22 09:31:58,061 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:31:58,063 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.99ms
+2026-09-22 09:32:03,061 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:32:03,063 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.67ms
+2026-09-22 09:32:08,061 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:32:08,062 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.69ms
+2026-09-22 09:32:13,061 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:32:13,063 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.80ms
+2026-09-22 09:32:18,061 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:32:18,063 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.84ms
+2026-09-22 09:32:23,060 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:32:23,062 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.79ms
+2026-09-22 09:32:28,060 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:32:28,062 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.84ms
+2026-09-22 09:32:33,060 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:32:33,062 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.78ms
+2026-09-22 09:32:38,060 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:32:38,062 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.74ms
+2026-09-22 09:32:43,060 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:32:43,062 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.76ms
+2026-09-22 09:32:48,060 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:32:48,062 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.91ms
+2026-09-22 09:32:53,059 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:32:53,061 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.73ms
+2026-09-22 09:32:58,059 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:32:58,061 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.79ms
+2026-09-22 09:33:03,059 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:33:03,061 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.73ms
+2026-09-22 09:33:08,059 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:33:08,061 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.11ms
+2026-09-22 09:33:13,059 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:33:13,061 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.98ms
+2026-09-22 09:33:18,058 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:33:18,060 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.79ms
+2026-09-22 09:33:23,059 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:33:23,061 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.84ms
+2026-09-22 09:33:28,058 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:33:28,060 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.92ms
+2026-09-22 09:33:33,058 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:33:33,059 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.87ms
+2026-09-22 09:33:38,057 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:33:38,059 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.01ms
+2026-09-22 09:33:43,057 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:33:43,059 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.82ms
+2026-09-22 09:33:48,058 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:33:48,060 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.89ms
+2026-09-22 09:33:53,057 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:33:53,059 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.03ms
+2026-09-22 09:33:58,057 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:33:58,060 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.23ms
+2026-09-22 09:34:03,057 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:34:03,059 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.94ms
+2026-09-22 09:34:08,056 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:34:08,058 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.09ms
+2026-09-22 09:34:13,057 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:34:13,058 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.71ms
+2026-09-22 09:34:18,057 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:34:18,059 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.04ms
+2026-09-22 09:34:23,056 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:34:23,058 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.83ms
+2026-09-22 09:34:28,056 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:34:28,058 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.81ms
+2026-09-22 09:34:33,056 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:34:33,058 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.03ms
+2026-09-22 09:34:38,056 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:34:38,058 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.79ms
+2026-09-22 09:34:43,055 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:34:43,057 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.87ms
+2026-09-22 09:34:48,055 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:34:48,056 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.91ms
+2026-09-22 09:34:53,055 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:34:53,057 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.90ms
+2026-09-22 09:34:58,055 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:34:58,057 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.03ms
+2026-09-22 09:35:03,055 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:35:03,057 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.96ms
+2026-09-22 09:35:08,054 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:35:08,057 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.21ms
+2026-09-22 09:35:12,466 | INFO | monitoring | Request started | method=GET | path=/health
+2026-09-22 09:35:12,467 | INFO | monitoring | Health check requested
+2026-09-22 09:35:12,467 | INFO | monitoring | Request completed | method=GET | path=/health | status=200 | latency=1.55ms
+2026-09-22 09:35:13,054 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:35:13,057 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.08ms
+2026-09-22 09:35:18,054 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:35:18,056 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.21ms
+2026-09-22 09:35:22,715 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:35:22,717 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.44ms
+2026-09-22 09:35:23,054 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:35:23,056 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.98ms
+2026-09-22 09:35:28,054 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:35:28,055 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.79ms
+2026-09-22 09:35:33,054 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:35:33,055 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.88ms
+2026-09-22 09:35:38,053 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:35:38,056 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.12ms
+2026-09-22 09:35:43,052 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:35:43,054 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.99ms
+2026-09-22 09:35:48,053 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:35:48,056 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=3.04ms
+2026-09-22 09:35:53,052 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:35:53,054 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.92ms
+2026-09-22 09:35:58,052 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:35:58,054 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.95ms
+2026-09-22 09:36:03,052 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:36:03,054 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.06ms
+2026-09-22 09:36:08,052 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:36:08,054 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.95ms
+2026-09-22 09:36:13,051 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:36:13,054 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.09ms
+2026-09-22 09:36:18,052 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:36:18,054 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.94ms
+2026-09-22 09:36:23,051 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:36:23,053 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.97ms
+2026-09-22 09:36:28,050 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:36:28,052 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.83ms
+2026-09-22 09:36:33,051 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:36:33,053 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.01ms
+2026-09-22 09:36:38,050 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:36:38,052 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.17ms
+2026-09-22 09:36:43,050 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:36:43,052 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.92ms
+2026-09-22 09:36:48,050 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:36:48,052 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.04ms
+2026-09-22 09:36:53,050 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:36:53,052 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.96ms
+2026-09-22 09:36:58,050 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:36:58,052 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.11ms
+2026-09-22 09:37:03,049 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:37:03,051 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.94ms
+2026-09-22 09:37:08,049 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:37:08,051 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.78ms
+2026-09-22 09:37:13,049 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:37:13,051 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.92ms
+2026-09-22 09:37:18,049 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:37:18,051 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.01ms
+2026-09-22 09:37:23,050 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:37:23,052 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.08ms
+2026-09-22 09:37:28,048 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:37:28,050 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.30ms
+2026-09-22 09:37:33,049 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:37:33,051 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.97ms
+2026-09-22 09:37:38,049 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:37:38,051 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.98ms
+2026-09-22 09:37:43,048 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:37:43,051 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.03ms
+2026-09-22 09:37:48,047 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:37:48,050 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.11ms
+2026-09-22 09:37:53,047 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:37:53,049 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.06ms
+2026-09-22 09:37:58,047 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:37:58,049 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.11ms
+2026-09-22 09:38:03,047 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:38:03,049 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.95ms
+2026-09-22 09:38:08,047 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:38:08,049 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.95ms
+2026-09-22 09:38:13,047 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:38:13,049 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.26ms
+2026-09-22 09:38:18,047 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:38:18,050 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.42ms
+2026-09-22 09:38:23,047 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:38:23,049 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.20ms
+2026-09-22 09:38:28,047 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:38:28,049 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.13ms
+2026-09-22 09:38:33,047 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:38:33,049 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.10ms
+2026-09-22 09:38:38,045 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:38:38,047 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.90ms
+2026-09-22 09:38:43,046 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:38:43,048 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.06ms
+2026-09-22 09:38:48,046 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:38:48,048 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.86ms
+2026-09-22 09:38:53,045 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:38:53,047 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.07ms
+2026-09-22 09:38:58,045 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:38:58,047 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.28ms
+2026-09-22 09:39:03,045 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:39:03,047 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.21ms
+2026-09-22 09:39:08,045 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:39:08,047 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.80ms
+2026-09-22 09:39:13,045 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:39:13,048 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.51ms
+2026-09-22 09:39:18,044 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:39:18,046 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.94ms
+2026-09-22 09:39:23,044 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:39:23,046 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.06ms
+2026-09-22 09:39:28,044 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:39:28,047 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=3.07ms
+2026-09-22 09:39:33,043 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:39:33,047 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=3.20ms
+2026-09-22 09:39:38,044 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:39:38,053 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=9.17ms
+2026-09-22 09:39:43,043 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:39:43,045 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.14ms
+2026-09-22 09:39:48,043 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:39:48,045 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.51ms
+2026-09-22 09:39:53,043 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:39:53,045 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.42ms
+2026-09-22 09:39:58,042 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:39:58,045 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.48ms
+2026-09-22 09:40:03,042 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:40:03,044 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.00ms
+2026-09-22 09:40:08,042 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:40:08,045 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.82ms
+2026-09-22 09:40:13,042 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:40:13,044 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.28ms
+2026-09-22 09:40:18,042 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:40:18,044 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.20ms
+2026-09-22 09:40:23,042 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:40:23,044 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.49ms
+2026-09-22 09:40:28,041 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:40:28,044 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.14ms
+2026-09-22 09:40:33,040 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:40:33,042 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.02ms
+2026-09-22 09:40:38,040 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:40:38,042 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.07ms
+2026-09-22 09:40:43,040 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:40:43,042 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.07ms
+2026-09-22 09:40:48,040 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:40:48,042 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.47ms
+2026-09-22 09:40:53,040 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:40:53,043 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.43ms
+2026-09-22 09:40:58,040 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:40:58,042 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.04ms
+2026-09-22 09:41:03,040 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:41:03,042 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.96ms
+2026-09-22 09:41:08,039 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:41:08,041 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.08ms
+2026-09-22 09:41:13,039 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:41:13,040 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.76ms
+2026-09-22 09:41:18,039 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:41:18,041 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.01ms
+2026-09-22 09:41:23,039 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:41:23,041 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.08ms
+2026-09-22 09:41:28,039 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:41:28,041 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.07ms
+2026-09-22 09:41:33,039 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:41:33,041 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.13ms
+2026-09-22 09:41:38,038 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:41:38,040 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.14ms
+2026-09-22 09:41:43,038 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:41:43,040 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.02ms
+2026-09-22 09:41:48,038 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:41:48,040 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.94ms
+2026-09-22 09:41:53,037 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:41:53,040 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.32ms
+2026-09-22 09:41:58,038 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:41:58,040 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.25ms
+2026-09-22 09:42:03,037 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:42:03,040 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.82ms
+2026-09-22 09:42:08,036 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:42:08,039 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.08ms
+2026-09-22 09:42:13,037 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:42:13,039 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.00ms
+2026-09-22 09:42:18,037 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:42:18,040 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.31ms
+2026-09-22 09:42:23,036 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:42:23,038 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.01ms
+2026-09-22 09:42:28,036 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:42:28,038 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.22ms
+2026-09-22 09:42:33,036 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:42:33,038 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.14ms
+2026-09-22 09:42:38,037 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:42:38,039 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.03ms
+2026-09-22 09:42:43,036 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:42:43,038 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.95ms
+2026-09-22 09:42:48,035 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:42:48,037 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.97ms
+2026-09-22 09:42:53,036 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:42:53,038 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.96ms
+2026-09-22 09:42:58,036 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:42:58,038 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.00ms
+2026-09-22 09:43:03,035 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:43:03,037 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.03ms
+2026-09-22 09:43:08,035 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:43:08,037 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.14ms
+2026-09-22 09:43:13,034 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:43:13,036 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.05ms
+2026-09-22 09:43:18,034 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:43:18,036 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.01ms
+2026-09-22 09:43:23,035 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:43:23,037 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.09ms
+2026-09-22 09:43:28,034 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:43:28,036 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.02ms
+2026-09-22 09:43:33,034 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:43:33,036 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.00ms
+2026-09-22 09:43:38,033 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:43:38,035 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.93ms
+2026-09-22 09:43:43,033 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:43:43,036 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.33ms
+2026-09-22 09:43:48,034 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:43:48,036 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.02ms
+2026-09-22 09:43:53,033 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:43:53,035 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.05ms
+2026-09-22 09:43:58,033 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:43:58,035 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.08ms
+2026-09-22 09:44:03,032 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:44:03,035 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.60ms
+2026-09-22 09:44:08,032 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:44:08,034 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.01ms
+2026-09-22 09:44:13,032 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:44:13,035 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.68ms
+2026-09-22 09:44:18,032 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:44:18,035 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.49ms
+2026-09-22 09:44:23,031 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:44:23,034 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.46ms
+2026-09-22 09:44:28,032 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:44:28,034 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.37ms
+2026-09-22 09:44:33,032 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:44:33,034 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.46ms
+2026-09-22 09:44:38,031 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:44:38,033 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.52ms
+2026-09-22 09:44:43,031 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:44:43,034 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.45ms
+2026-09-22 09:44:48,031 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:44:48,034 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.36ms
+2026-09-22 09:44:53,031 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:44:53,033 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.29ms
+2026-09-22 09:44:58,031 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:44:58,033 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.03ms
+2026-09-22 09:45:03,030 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:45:03,032 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.81ms
+2026-09-22 09:45:08,031 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:45:08,033 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.55ms
+2026-09-22 09:45:13,030 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:45:13,032 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.89ms
+2026-09-22 09:45:18,030 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:45:18,032 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.05ms
+2026-09-22 09:45:23,029 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:45:23,031 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.90ms
+2026-09-22 09:45:28,029 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:45:28,031 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.02ms
+2026-09-22 09:45:33,029 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:45:33,032 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.23ms
+2026-09-22 09:45:38,029 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:45:38,031 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.95ms
+2026-09-22 09:45:43,028 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:45:43,031 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.33ms
+2026-09-22 09:45:48,028 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:45:48,031 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.12ms
+2026-09-22 09:45:53,029 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:45:53,031 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.09ms
+2026-09-22 09:45:58,028 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:45:58,031 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.13ms
+2026-09-22 09:46:03,028 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:46:03,030 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.23ms
+2026-09-22 09:46:08,028 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:46:08,030 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.08ms
+2026-09-22 09:46:13,028 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:46:13,030 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.06ms
+2026-09-22 09:46:18,027 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:46:18,029 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.06ms
+2026-09-22 09:46:23,027 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:46:23,029 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.93ms
+2026-09-22 09:46:28,027 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:46:28,029 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.38ms
+2026-09-22 09:46:33,026 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:46:33,029 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.15ms
+2026-09-22 09:46:38,026 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:46:38,028 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.02ms
+2026-09-22 09:46:43,027 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:46:43,029 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.03ms
+2026-09-22 09:46:48,026 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:46:48,028 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.02ms
+2026-09-22 09:46:53,026 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:46:53,029 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.22ms
+2026-09-22 09:46:58,026 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:46:58,028 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.05ms
+2026-09-22 09:47:03,025 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:47:03,027 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.89ms
+2026-09-22 09:47:08,025 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:47:08,027 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.43ms
+2026-09-22 09:47:13,025 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:47:13,027 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.12ms
+2026-09-22 09:47:18,025 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:47:18,027 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.95ms
+2026-09-22 09:47:23,025 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:47:23,027 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.04ms
+2026-09-22 09:47:28,025 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:47:28,027 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.08ms
+2026-09-22 09:47:33,024 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:47:33,026 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.96ms
+2026-09-22 09:47:38,024 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:47:38,026 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.25ms
+2026-09-22 09:47:43,024 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:47:43,026 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.01ms
+2026-09-22 09:47:48,024 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:47:48,026 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.20ms
+2026-09-22 09:47:53,024 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:47:53,026 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.96ms
+2026-09-22 09:47:58,023 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:47:58,025 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.05ms
+2026-09-22 09:48:03,023 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:48:03,025 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.97ms
+2026-09-22 09:48:08,023 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:48:08,025 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.90ms
+2026-09-22 09:48:13,022 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:48:13,024 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.08ms
+2026-09-22 09:48:18,022 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:48:18,024 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.06ms
+2026-09-22 09:48:23,022 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:48:23,024 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.92ms
+2026-09-22 09:48:28,022 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:48:28,024 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.00ms
+2026-09-22 09:48:33,022 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:48:33,024 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.16ms
+2026-09-22 09:48:38,022 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:48:38,025 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.18ms
+2026-09-22 09:48:43,022 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:48:43,024 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.20ms
+2026-09-22 09:48:48,022 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:48:48,024 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.15ms
+2026-09-22 09:48:53,021 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:48:53,023 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.12ms
+2026-09-22 09:48:58,021 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:48:58,023 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.03ms
+2026-09-22 09:49:03,021 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:49:03,023 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.95ms
+2026-09-22 09:49:08,020 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:49:08,022 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.95ms
+2026-09-22 09:49:13,020 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:49:13,022 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.97ms
+2026-09-22 09:49:18,020 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:49:18,022 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.03ms
+2026-09-22 09:49:23,019 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:49:23,021 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.93ms
+2026-09-22 09:49:28,020 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:49:28,022 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.25ms
+2026-09-22 09:49:33,020 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:49:33,022 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.11ms
+2026-09-22 09:49:38,019 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:49:38,021 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.31ms
+2026-09-22 09:49:43,019 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:49:43,021 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.97ms
+2026-09-22 09:49:48,019 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:49:48,022 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.50ms
+2026-09-22 09:49:53,019 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:49:53,021 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.05ms
+2026-09-22 09:49:58,019 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:49:58,021 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.01ms
+2026-09-22 09:50:03,018 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:50:03,020 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.96ms
+2026-09-22 09:50:08,018 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:50:08,020 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.13ms
+2026-09-22 09:50:13,018 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:50:13,020 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.13ms
+2026-09-22 09:50:18,018 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:50:18,020 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.37ms
+2026-09-22 09:50:23,018 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:50:23,020 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.29ms
+2026-09-22 09:50:28,018 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:50:28,020 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.90ms
+2026-09-22 09:50:33,017 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:50:33,020 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.51ms
+2026-09-22 09:50:38,017 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:50:38,019 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.99ms
+2026-09-22 09:50:43,017 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:50:43,019 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.01ms
+2026-09-22 09:50:48,016 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:50:48,019 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.21ms
+2026-09-22 09:50:53,017 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:50:53,019 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.38ms
+2026-09-22 09:50:58,016 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:50:58,019 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.37ms
+2026-09-22 09:51:03,016 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:51:03,019 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.23ms
+2026-09-22 09:51:08,015 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:51:08,017 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.20ms
+2026-09-22 09:51:13,016 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:51:13,018 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.06ms
+2026-09-22 09:51:18,016 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:51:18,018 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.21ms
+2026-09-22 09:51:23,015 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:51:23,017 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.09ms
+2026-09-22 09:51:28,015 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:51:28,017 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.07ms
+2026-09-22 09:51:33,015 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:51:33,017 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.07ms
+2026-09-22 09:51:38,015 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:51:38,017 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.96ms
+2026-09-22 09:51:43,014 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:51:43,016 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.85ms
+2026-09-22 09:51:48,014 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:51:48,016 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.02ms
+2026-09-22 09:51:53,014 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:51:53,016 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.40ms
+2026-09-22 09:51:58,013 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:51:58,016 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.16ms
+2026-09-22 09:52:03,014 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:52:03,016 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.94ms
+2026-09-22 09:52:08,013 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:52:08,015 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.25ms
+2026-09-22 09:52:13,013 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:52:13,015 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.27ms
+2026-09-22 09:52:18,013 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:52:18,015 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.91ms
+2026-09-22 09:52:23,012 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:52:23,015 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.69ms
+2026-09-22 09:52:28,012 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:52:28,014 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.01ms
+2026-09-22 09:52:33,012 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:52:33,014 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.93ms
+2026-09-22 09:52:38,012 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:52:38,014 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.40ms
+2026-09-22 09:52:43,012 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:52:43,014 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.99ms
+2026-09-22 09:52:48,011 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:52:48,013 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.93ms
+2026-09-22 09:52:53,011 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:52:53,013 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.16ms
+2026-09-22 09:52:58,011 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:52:58,013 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.01ms
+2026-09-22 09:53:03,011 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:53:03,013 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.32ms
+2026-09-22 09:53:08,011 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:53:08,013 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.15ms
+2026-09-22 09:53:13,011 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:53:13,013 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.28ms
+2026-09-22 09:53:18,011 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:53:18,013 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.26ms
+2026-09-22 09:53:23,011 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:53:23,013 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.14ms
+2026-09-22 09:53:28,010 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:53:28,012 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.03ms
+2026-09-22 09:53:33,010 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:53:33,012 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.10ms
+2026-09-22 09:53:38,009 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:53:38,012 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.18ms
+2026-09-22 09:53:43,009 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:53:43,011 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.88ms
+2026-09-22 09:53:48,010 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:53:48,012 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.14ms
+2026-09-22 09:53:53,009 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:53:53,011 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.04ms
+2026-09-22 09:53:58,009 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:53:58,011 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.05ms
+2026-09-22 09:54:03,009 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:54:03,011 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.06ms
+2026-09-22 09:54:08,009 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:54:08,011 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.14ms
+2026-09-22 09:54:13,008 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:54:13,010 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.98ms
+2026-09-22 09:54:18,008 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:54:18,010 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.91ms
+2026-09-22 09:54:23,008 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:54:23,010 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.19ms
+2026-09-22 09:54:28,008 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:54:28,010 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.23ms
+2026-09-22 09:54:33,007 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:54:33,010 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.35ms
+2026-09-22 09:54:38,007 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:54:38,009 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.88ms
+2026-09-22 09:54:43,007 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:54:43,009 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.94ms
+2026-09-22 09:54:48,007 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:54:48,009 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.11ms
+2026-09-22 09:54:53,007 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:54:53,009 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.04ms
+2026-09-22 09:54:58,007 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:54:58,009 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.07ms
+2026-09-22 09:55:03,007 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:55:03,009 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.86ms
+2026-09-22 09:55:08,007 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:55:08,009 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.97ms
+2026-09-22 09:55:13,006 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:55:13,009 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.52ms
+2026-09-22 09:55:18,005 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:55:18,008 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.20ms
+2026-09-22 09:55:23,006 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:55:23,007 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.84ms
+2026-09-22 09:55:28,005 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:55:28,007 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.02ms
+2026-09-22 09:55:33,005 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:55:33,007 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.99ms
+2026-09-22 09:55:38,005 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:55:38,007 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.34ms
+2026-09-22 09:55:43,005 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:55:43,007 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.21ms
+2026-09-22 09:55:48,004 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:55:48,007 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.42ms
+2026-09-22 09:55:53,005 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:55:53,007 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.95ms
+2026-09-22 09:55:58,005 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:55:58,007 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.13ms
+2026-09-22 09:56:03,004 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:56:03,006 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.11ms
+2026-09-22 09:56:08,003 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:56:08,006 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.03ms
+2026-09-22 09:56:13,004 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:56:13,006 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.13ms
+2026-09-22 09:56:18,004 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:56:18,006 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.05ms
+2026-09-22 09:56:23,003 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:56:23,005 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.19ms
+2026-09-22 09:56:28,003 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:56:28,005 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.13ms
+2026-09-22 09:56:33,003 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:56:33,005 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.96ms
+2026-09-22 09:56:38,002 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:56:38,004 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.01ms
+2026-09-22 09:56:43,003 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:56:43,005 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.17ms
+2026-09-22 09:56:48,002 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:56:48,004 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.15ms
+2026-09-22 09:56:53,003 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:56:53,005 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.28ms
+2026-09-22 09:56:58,002 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:56:58,004 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.21ms
+2026-09-22 09:57:03,002 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:57:03,004 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.27ms
+2026-09-22 09:57:08,002 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:57:08,004 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.00ms
+2026-09-22 09:57:13,001 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:57:13,003 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.04ms
+2026-09-22 09:57:18,001 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:57:18,003 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.99ms
+2026-09-22 09:57:23,001 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:57:23,003 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.17ms
+2026-09-22 09:57:28,001 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:57:28,003 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.95ms
+2026-09-22 09:57:33,001 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:57:33,002 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.85ms
+2026-09-22 09:57:38,001 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:57:38,004 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.38ms
+2026-09-22 09:57:43,000 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:57:43,002 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.83ms
+2026-09-22 09:57:47,999 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:57:48,001 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.98ms
+2026-09-22 09:57:53,000 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:57:53,001 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.89ms
+2026-09-22 09:57:58,000 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:57:58,003 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.97ms
+2026-09-22 09:58:03,000 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:58:03,002 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.66ms
+2026-09-22 09:58:07,999 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:58:08,001 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.11ms
+2026-09-22 09:58:12,999 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:58:13,001 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.12ms
+2026-09-22 09:58:17,999 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:58:18,001 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.40ms
+2026-09-22 09:58:22,998 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:58:23,000 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.90ms
+2026-09-22 09:58:27,998 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:58:28,000 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.02ms
+2026-09-22 09:58:32,998 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:58:33,000 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.89ms
+2026-09-22 09:58:37,998 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:58:38,000 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.01ms
+2026-09-22 09:58:42,997 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:58:42,999 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.13ms
+2026-09-22 09:58:47,999 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:58:48,002 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=3.10ms
+2026-09-22 09:58:52,998 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:58:53,000 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.25ms
+2026-09-22 09:58:57,998 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:58:58,000 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.04ms
+2026-09-22 09:59:02,997 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:59:03,000 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.81ms
+2026-09-22 09:59:07,997 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:59:07,999 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.14ms
+2026-09-22 09:59:12,997 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:59:12,999 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.93ms
+2026-09-22 09:59:17,997 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:59:17,999 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.18ms
+2026-09-22 09:59:22,996 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:59:22,998 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.01ms
+2026-09-22 09:59:27,996 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:59:27,998 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.91ms
+2026-09-22 09:59:32,996 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:59:32,998 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.99ms
+2026-09-22 09:59:37,996 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:59:37,998 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.28ms
+2026-09-22 09:59:42,995 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:59:42,997 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.02ms
+2026-09-22 09:59:47,995 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:59:47,997 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.11ms
+2026-09-22 09:59:52,996 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:59:52,999 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=3.48ms
+2026-09-22 09:59:57,995 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 09:59:57,997 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.13ms
+2026-09-22 10:00:02,994 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:00:02,996 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.10ms
+2026-09-22 10:00:07,994 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:00:07,996 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.09ms
+2026-09-22 10:00:12,994 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:00:12,996 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.99ms
+2026-09-22 10:00:17,994 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:00:17,996 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.90ms
+2026-09-22 10:00:22,994 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:00:22,995 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.89ms
+2026-09-22 10:00:27,993 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:00:27,995 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.02ms
+2026-09-22 10:00:32,994 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:00:32,996 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.04ms
+2026-09-22 10:00:37,994 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:00:37,996 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.92ms
+2026-09-22 10:00:42,993 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:00:42,995 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.05ms
+2026-09-22 10:00:47,993 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:00:47,995 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.89ms
+2026-09-22 10:00:52,993 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:00:52,995 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.04ms
+2026-09-22 10:00:57,994 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:00:57,996 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.99ms
+2026-09-22 10:01:02,992 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:01:02,995 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.33ms
+2026-09-22 10:01:07,992 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:01:07,994 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.91ms
+2026-09-22 10:01:12,992 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:01:12,994 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.01ms
+2026-09-22 10:01:17,992 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:01:17,994 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.33ms
+2026-09-22 10:01:22,992 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:01:22,994 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.11ms
+2026-09-22 10:01:27,991 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:01:27,993 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.34ms
+2026-09-22 10:01:32,991 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:01:32,993 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.02ms
+2026-09-22 10:01:37,991 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:01:37,993 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.02ms
+2026-09-22 10:01:42,992 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:01:42,993 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.96ms
+2026-09-22 10:01:47,991 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:01:47,993 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.37ms
+2026-09-22 10:01:52,990 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:01:52,992 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.03ms
+2026-09-22 10:01:57,990 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:01:57,992 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.16ms
+2026-09-22 10:02:02,990 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:02:02,992 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.03ms
+2026-09-22 10:02:07,990 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:02:07,992 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.12ms
+2026-09-22 10:02:12,990 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:02:12,992 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.06ms
+2026-09-22 10:02:17,990 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:02:17,992 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.60ms
+2026-09-22 10:02:22,990 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:02:22,993 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.81ms
+2026-09-22 10:02:27,989 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:02:27,992 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.39ms
+2026-09-22 10:02:32,989 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:02:32,991 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.39ms
+2026-09-22 10:02:37,989 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:02:37,991 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.22ms
+2026-09-22 10:02:42,988 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:02:42,991 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.41ms
+2026-09-22 10:02:47,988 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:02:47,991 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.52ms
+2026-09-22 10:02:52,988 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:02:52,991 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.48ms
+2026-09-22 10:02:57,988 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:02:57,990 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.09ms
+2026-09-22 10:03:02,988 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:03:02,990 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.19ms
+2026-09-22 10:03:07,987 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:03:07,989 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.31ms
+2026-09-22 10:03:12,988 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:03:12,990 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.18ms
+2026-09-22 10:03:17,987 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:03:17,989 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.24ms
+2026-09-22 10:03:22,987 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:03:22,990 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=3.53ms
+2026-09-22 10:03:27,987 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:03:27,989 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.34ms
+2026-09-22 10:03:32,987 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:03:32,989 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.28ms
+2026-09-22 10:03:37,986 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:03:37,988 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.84ms
+2026-09-22 10:03:42,986 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:03:42,988 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.96ms
+2026-09-22 10:03:47,985 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:03:47,987 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.95ms
+2026-09-22 10:03:52,986 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:03:52,987 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.95ms
+2026-09-22 10:03:57,986 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:03:57,988 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.24ms
+2026-09-22 10:04:02,986 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:04:02,988 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.38ms
+2026-09-22 10:04:07,985 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:04:07,987 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.01ms
+2026-09-22 10:04:12,985 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:04:12,987 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.95ms
+2026-09-22 10:04:17,985 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:04:17,987 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.21ms
+2026-09-22 10:04:22,985 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:04:22,987 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.14ms
+2026-09-22 10:04:27,984 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:04:27,986 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.16ms
+2026-09-22 10:04:32,985 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:04:32,987 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.03ms
+2026-09-22 10:04:37,984 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:04:37,986 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.11ms
+2026-09-22 10:04:42,983 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:04:42,985 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.91ms
+2026-09-22 10:04:47,984 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:04:47,986 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.00ms
+2026-09-22 10:04:52,984 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:04:52,986 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.17ms
+2026-09-22 10:04:57,983 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:04:57,985 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=1.94ms
+2026-09-22 10:05:02,982 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:05:02,984 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.04ms
+2026-09-22 10:05:07,983 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:05:07,985 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.04ms
+2026-09-22 10:05:12,982 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:05:12,984 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.06ms
+2026-09-22 10:05:17,982 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:05:17,985 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.48ms
+2026-09-22 10:05:22,983 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:05:22,987 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=3.80ms
+2026-09-22 10:05:27,982 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:05:27,984 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.38ms
+2026-09-22 10:05:32,982 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:05:32,984 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.10ms
+2026-09-22 10:05:37,982 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:05:37,984 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.24ms
+2026-09-22 10:05:42,982 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:05:42,984 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.93ms
+2026-09-22 10:05:47,981 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:05:47,984 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.39ms
+2026-09-22 10:05:52,981 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:05:52,984 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.49ms
+2026-09-22 10:05:57,981 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:05:57,983 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.40ms
+2026-09-22 10:06:02,981 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:06:02,984 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.52ms
+2026-09-22 10:06:07,980 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:06:07,982 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.12ms
+2026-09-22 10:06:12,980 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:06:12,982 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.18ms
+2026-09-22 10:06:17,980 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:06:17,982 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.24ms
+2026-09-22 10:06:22,980 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:06:22,983 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.21ms
+2026-09-22 10:06:27,980 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:06:27,982 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.36ms
+2026-09-22 10:06:32,979 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:06:32,981 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.19ms
+2026-09-22 10:06:37,980 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:06:37,983 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=3.54ms
+2026-09-22 10:06:42,980 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:06:42,982 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.35ms
+2026-09-22 10:06:47,979 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:06:47,981 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.18ms
+2026-09-22 10:06:52,979 | INFO | monitoring | Request started | method=GET | path=/metrics
+2026-09-22 10:06:52,981 | INFO | monitoring | Request completed | method=GET | path=/metrics | status=200 | latency=2.07ms
