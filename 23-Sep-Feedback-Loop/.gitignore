@@ -1,3 +1,3 @@
 .env
-feedback.db
+*.pyc
 __pycache__/
