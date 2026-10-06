@@ -8,7 +8,26 @@ from datetime import date, datetime, time, timedelta
 OLLAMA_URL = "http://localhost:11434/api/generate"
 MODEL_NAME = "gemma3:4b"
 
+def get_reservation_for_customer(customer_id: str):
+    query = f"""
+    SELECT
+        r.reservation_id,
+        r.customer_id,
+        r.table_id,
+        r.reservation_date,
+        r.reservation_time,
+        r.guests,
+        r.status
+    FROM reservations AS r
+    WHERE r.customer_id = '{customer_id}'
+    ORDER BY r.reservation_date, r.reservation_time
+    LIMIT 1
+    """
 
+    records = run_read_only_query(query)
+
+    return format_database_records(records)
+    
 def ask_ollama(prompt: str):
     """Send a prompt to the local Ollama model."""
 
