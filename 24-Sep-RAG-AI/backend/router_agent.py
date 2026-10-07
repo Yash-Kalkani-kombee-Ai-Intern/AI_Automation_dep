@@ -1,7 +1,7 @@
 import re
 import requests
 from datetime import datetime
-
+from logger import logger
 from router import classify_question
 from sql_agent import (
     answer_database_question,
@@ -427,7 +427,7 @@ def handle_cancellation_question(question: str):
 def answer_question(question: str):
 
     question = question.strip()
-
+    
     if not question:
 
         return "Please provide a question."
@@ -435,6 +435,8 @@ def answer_question(question: str):
     route = classify_question(
         question
     )
+
+    logger.info(f"ROUTE | {route}")
 
     print("\n========== AI ROUTER ==========")
     print(f"Question: {question}")

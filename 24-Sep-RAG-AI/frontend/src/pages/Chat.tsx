@@ -13,9 +13,18 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 
 interface Message {
-    id: string;
-    sender: "user" | "assistant";
-    text: string;
+    id?: string;
+    sender?: "user" | "assistant";
+    text?: string;
+    role?: "user" | "assistant";
+    content?: string;
+}
+
+interface HistoryItem {
+  id: number;
+  question: string;
+  answer: string;
+  created_at: string;
 }
 
 export default function Chat() {
@@ -30,6 +39,40 @@ export default function Chat() {
     const [inputQuery, setInputQuery] = useState("");
     const [isLoading, setIsLoading] = useState(false);
     const messagesEndRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const loadHistory = async () => {
+            try {
+                const response = await fetch(
+                    "http://localhost:8000/history"
+                );
+
+                if (!response.ok) {
+                    throw new Error("Failed to load chat history");
+                }
+
+                const data = await response.json();
+
+                const historyMessages: Message[] =
+                    data.history.flatMap((item: HistoryItem) => [
+                        {
+                            role: "user",
+                            content: item.question,
+                        },
+                        {
+                            role: "assistant",
+                            content: item.answer,
+                        },
+                    ]);
+
+                setMessages(historyMessages);
+            } catch (error) {
+                console.error("History error:", error);
+            }
+        };
+
+        loadHistory();
+    }, []);
 
     const scrollToBottom = () => {
         messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -213,25 +256,29 @@ export default function Chat() {
 
                         {/* Messages Stream */}
                         <div className="flex flex-col space-y-4">
-                            {messages.map((msg) =>
-                                msg.sender === "user" ? (
-                                    <div key={msg.id} className="flex justify-end">
+                            {messages.map((msg, index) => {
+                                const isUser = msg.sender === "user" || msg.role === "user";
+                                const messageText = msg.text || msg.content;
+                                const messageKey = msg.id || `msg-${index}`;
+
+                                return isUser ? (
+                                    <div key={messageKey} className="flex justify-end">
                                         <div className="max-w-[80%] rounded-2xl rounded-br-md bg-primary px-4 py-3 text-sm text-primary-foreground font-normal">
-                                            {msg.text}
+                                            {messageText}
                                         </div>
                                     </div>
                                 ) : (
-                                    <div key={msg.id} className="flex gap-3">
+                                    <div key={messageKey} className="flex gap-3">
                                         <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-border bg-secondary">
                                             <Bot className="h-4 w-4 text-zinc-200" />
                                         </div>
 
                                         <div className="max-w-[80%] rounded-2xl rounded-tl-md border border-border bg-card px-5 py-4 text-sm text-card-foreground">
-                                            {msg.text}
+                                            {messageText}
                                         </div>
                                     </div>
-                                )
-                            )}
+                                );
+                            })}
 
                             {isLoading && (
 

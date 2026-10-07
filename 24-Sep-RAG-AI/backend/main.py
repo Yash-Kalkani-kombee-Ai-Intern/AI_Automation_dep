@@ -1,10 +1,12 @@
+import time
+
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-
+from chat_history import save_chat, get_chat_history
+from logger import logger
 from router_agent import answer_question
 from rag.rag_agent import answer_policy_question
-
 
 app = FastAPI(
     title="LocalAI API",
@@ -71,9 +73,9 @@ def health():
 
 @app.post("/chat", response_model=ChatResponse)
 def chat(request: ChatRequest):
+    start_time = time.perf_counter()
 
     try:
-
         question = request.question.strip()
 
         if not question:
@@ -82,36 +84,51 @@ def chat(request: ChatRequest):
                 detail="Question cannot be empty.",
             )
 
-        print("\n========== CHAT REQUEST ==========")
-        print(f"Question: {question}")
+        logger.info(f"QUESTION | {question}")
 
-        # AI Router decides:
-        # SQL / RAG / BOTH
         answer = answer_question(question)
 
-        print("\n========== CHAT ANSWER ==========")
-        print(answer)
-        print("==================================\n")
+        save_chat(question, answer)
 
-        return ChatResponse(
-            answer=answer
+        elapsed_time = time.perf_counter() - start_time
+
+        logger.info(f"ANSWER | {answer}")
+        logger.info(
+            f"RESPONSE_TIME | {elapsed_time:.2f} seconds"
         )
+
+        return ChatResponse(answer=answer)
 
     except HTTPException:
         raise
 
     except Exception as e:
+        elapsed_time = time.perf_counter() - start_time
 
-        print("\n========== CHAT ERROR ==========")
-        print(str(e))
-        print("================================\n")
+        logger.error(f"ERROR | {str(e)}")
+        logger.error(
+            f"RESPONSE_TIME | {elapsed_time:.2f} seconds"
+        )
 
         raise HTTPException(
             status_code=500,
             detail=str(e),
         )
 
+@app.get("/history")
+def history():
+    try:
+        return {
+            "history": get_chat_history()
+        }
 
+    except Exception as e:
+        logger.error(f"HISTORY_ERROR | {str(e)}")
+
+        raise HTTPException(
+            status_code=500,
+            detail=str(e),
+        )
 # ============================================================
 # DIRECT RAG ENDPOINT
 # ============================================================
