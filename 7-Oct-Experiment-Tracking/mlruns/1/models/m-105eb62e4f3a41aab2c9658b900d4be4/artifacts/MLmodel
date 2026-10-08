@@ -1,0 +1,24 @@
+artifact_path: file:C:/Users/asus/OneDrive/Desktop/AI_Automation_dep/AI_Automation_dep/7-Oct-Experiment-Tracking/mlruns/1/models/m-105eb62e4f3a41aab2c9658b900d4be4/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.14.6
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.9.1
+    skops_trusted_types:
+    - sklearn.tree._tree.Tree
+mlflow_version: 3.17.0
+model_id: m-105eb62e4f3a41aab2c9658b900d4be4
+model_size_bytes: 925067
+model_uuid: m-105eb62e4f3a41aab2c9658b900d4be4
+prompts: null
+run_id: 72b2c7e3eba8437fab888c1896b908a4
+utc_time_created: '2026-10-08 04:18:04.435006'
